@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>世界の事件・事故アーカイブ — 歴史から学ぶ教訓</title>
+  <meta name="description" content="世界中で起きた食中毒・登山遭難・洞窟事故・航空機事故などを詳細に解説。そこから得られる教訓と社会への影響を伝えます。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      🌐 世界の<span>事件・事故</span>アーカイブ
+    </a>
+    <nav>
+      <a href="#categories">カテゴリー</a>
+      <a href="#articles">記事一覧</a>
+      <a href="about.html">このサイトについて</a>
+    </nav>
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input id="search-input" type="text" placeholder="キーワードで検索...">
+    </div>
+  </div>
+</header>
+
+<!-- Search overlay -->
+<div id="search-results">
+  <div class="search-panel">
+    <div class="search-panel-header">
+      <span id="search-header"></span>
+      <span style="cursor:pointer" onclick="document.getElementById('search-results').classList.remove('active')">✕ 閉じる</span>
+    </div>
+    <div id="search-results-list"></div>
+  </div>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1>世界の<span class="accent">事件・事故</span>を<br>深く知り、未来に活かす</h1>
+    <p>
+      食中毒・登山遭難・水中洞窟・航空機事故・原子力災害…<br>
+      歴史に刻まれた出来事を詳細に解説し、教訓と社会的影響を記録します。
+    </p>
+    <div class="hero-stats">
+      <div class="stat"><div class="num">50+</div><div class="label">掲載記事数</div></div>
+      <div class="stat"><div class="num">12</div><div class="label">カテゴリー</div></div>
+      <div class="stat"><div class="num">30+</div><div class="label">対象国・地域</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="main-wrap">
+  <!-- Main column -->
+  <main>
+
+    <!-- Featured -->
+    <div class="section-title">🔥 注目記事</div>
+    <div class="featured-card">
+      <div class="featured-img">🕳️</div>
+      <div class="featured-body">
+        <span class="featured-badge">FEATURED</span>
+        <h2><a href="articles/thai-cave-2018.html">タイ洞窟少年救出作戦（2018年）</a></h2>
+        <p>
+          タイ北部チェンライのタムルアン洞窟に閉じ込められた少年サッカーチーム13名。
+          増水する洞窟内で17日間を生き延びた彼らを救い出すため、世界中から救助隊が集結した。
+          元英国海軍特殊部隊ダイバーによる前例のない救出作戦の全貌。
+        </p>
+        <div class="article-meta">
+          <span class="tag tag-cave">洞窟</span>
+          <span>🇹🇭 タイ</span>
+          <span>2018年7月</span>
+          <span>救出成功</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Categories -->
+    <div id="categories" class="section-title">📂 カテゴリー</div>
+    <div class="categories-grid">
+      <div class="category-card" data-category="食中毒">
+        <div class="cat-icon">🍽️</div>
+        <div class="cat-name">食中毒</div>
+        <div class="cat-count">8記事</div>
+      </div>
+      <div class="category-card" data-category="登山">
+        <div class="cat-icon">🏔️</div>
+        <div class="cat-name">登山・山岳</div>
+        <div class="cat-count">10記事</div>
+      </div>
+      <div class="category-card" data-category="洞窟">
+        <div class="cat-icon">🕳️</div>
+        <div class="cat-name">洞窟・水中洞窟</div>
+        <div class="cat-count">6記事</div>
+      </div>
+      <div class="category-card" data-category="海難">
+        <div class="cat-icon">🌊</div>
+        <div class="cat-name">海難・水難</div>
+        <div class="cat-count">7記事</div>
+      </div>
+      <div class="category-card" data-category="航空">
+        <div class="cat-icon">✈️</div>
+        <div class="cat-name">航空機事故</div>
+        <div class="cat-count">9記事</div>
+      </div>
+      <div class="category-card" data-category="原子力">
+        <div class="cat-icon">☢️</div>
+        <div class="cat-name">原子力・化学</div>
+        <div class="cat-count">4記事</div>
+      </div>
+      <div class="category-card" data-category="火災・災害">
+        <div class="cat-icon">🔥</div>
+        <div class="cat-name">火災・自然災害</div>
+        <div class="cat-count">5記事</div>
+      </div>
+      <div class="category-card" data-category="水中洞窟">
+        <div class="cat-icon">🤿</div>
+        <div class="cat-name">ダイビング事故</div>
+        <div class="cat-count">5記事</div>
+      </div>
+    </div>
+
+    <!-- Articles -->
+    <div id="articles" class="section-title">📰 最新記事</div>
+    <div id="articles-grid" class="articles-grid"></div>
+    <button id="load-more" class="load-more">もっと見る ↓</button>
+
+  </main>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <h3>🏆 人気記事 TOP5</h3>
+      <ul class="recent-list" id="recent-list"></ul>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>🏷️ タグで探す</h3>
+      <div class="tag-cloud">
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='食中毒'; document.getElementById('search-input').dispatchEvent(new Event('input'))">食中毒</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='登山'; document.getElementById('search-input').dispatchEvent(new Event('input'))">登山</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='洞窟'; document.getElementById('search-input').dispatchEvent(new Event('input'))">洞窟</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='ロシア'; document.getElementById('search-input').dispatchEvent(new Event('input'))">ロシア</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='航空'; document.getElementById('search-input').dispatchEvent(new Event('input'))">航空</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='日本'; document.getElementById('search-input').dispatchEvent(new Event('input'))">日本</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='アメリカ'; document.getElementById('search-input').dispatchEvent(new Event('input'))">アメリカ</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='エベレスト'; document.getElementById('search-input').dispatchEvent(new Event('input'))">エベレスト</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='原子力'; document.getElementById('search-input').dispatchEvent(new Event('input'))">原子力</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='タイ'; document.getElementById('search-input').dispatchEvent(new Event('input'))">タイ</span>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>ℹ️ このサイトについて</h3>
+      <p style="font-size:0.83rem;color:var(--text-muted);line-height:1.8">
+        世界各地の事件・事故を正確な情報をもとに解説し、
+        そこから得られる教訓・社会への影響を記録するアーカイブサイトです。
+        犠牲となった方々への敬意を忘れず、未来への学びとして情報を発信します。
+      </p>
+    </div>
+
+  </aside>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-about">
+      <div class="logo">🌐 世界の<span style="color:var(--accent)">事件・事故</span>アーカイブ</div>
+      <p>
+        歴史に刻まれた事件・事故を詳細に解説し、教訓と影響を後世に伝えるアーカイブサイト。
+        記事はすべて公開されている信頼性の高い資料・文献をもとに作成しています。
+      </p>
+    </div>
+    <div class="footer-links">
+      <h4>カテゴリー</h4>
+      <ul>
+        <li><a href="#">食中毒・感染症</a></li>
+        <li><a href="#">登山・山岳遭難</a></li>
+        <li><a href="#">洞窟・水中洞窟</a></li>
+        <li><a href="#">海難・水難事故</a></li>
+        <li><a href="#">航空機事故</a></li>
+        <li><a href="#">原子力・化学事故</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>サイト情報</h4>
+      <ul>
+        <li><a href="#">このサイトについて</a></li>
+        <li><a href="#">参考文献・出典</a></li>
+        <li><a href="#">免責事項</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 世界の事件・事故アーカイブ</span>
+    <span>記事の情報は公開資料をもとに作成しています。</span>
+  </div>
+</footer>
+
+<button class="back-to-top" id="back-to-top">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
