@@ -154,6 +154,84 @@ const articles = [
     summary: "ロシア海軍の誇りが海底に沈んだ。魚雷爆発から救助拒否まで、プーチン政権初期の対応が露呈した問題。",
     file: "articles/kursk-2000.html",
     difficulty: 3
+  },
+  {
+    id: "jal123-1985",
+    title: "日本航空123便墜落事故（1985年）",
+    category: "航空",
+    tag: "tag-aviation",
+    emoji: "✈️",
+    date: "1985年8月",
+    country: "日本（群馬県）",
+    victims: "死者520名・生存者4名",
+    summary: "単独機事故として世界最多の死者を出した日本最大の航空惨事。7年前の修理ミスが招いた32分間の壮絶な闘い。",
+    file: "articles/jal123-1985.html",
+    difficulty: 3
+  },
+  {
+    id: "titanic-1912",
+    title: "タイタニック号沈没事故（1912年）",
+    category: "海難",
+    tag: "tag-sea",
+    emoji: "🚢",
+    date: "1912年4月",
+    country: "北大西洋",
+    victims: "死者約1,500名",
+    summary: "「沈まない船」の慢心と氷山警告の無視が招いた20世紀最大の海難事故。救命ボート不足と階級格差が生存率を分けた。",
+    file: "articles/titanic-1912.html",
+    difficulty: 2
+  },
+  {
+    id: "bhopal-1984",
+    title: "ボパール化学工場ガス漏れ事故（1984年）",
+    category: "火災・災害",
+    tag: "tag-disaster",
+    emoji: "☣️",
+    date: "1984年12月",
+    country: "インド",
+    victims: "死者推計2〜2.5万名・負傷者55万人以上",
+    summary: "史上最悪の産業事故。コスト削減で安全装置を停止した工場から猛毒ガスが噴出し、一夜で数千名が命を落とした。",
+    file: "articles/bhopal-1984.html",
+    difficulty: 3
+  },
+  {
+    id: "k2-2008",
+    title: "K2大量遭難事故（2008年）",
+    category: "登山",
+    tag: "tag-mountain",
+    emoji: "⛰️",
+    date: "2008年8月",
+    country: "パキスタン",
+    victims: "死者11名",
+    summary: "「野蛮な山」と呼ばれるK2で一夜に11名が命を落とした。セラック崩落・渋滞・多国籍チームの混乱が重なった惨事。",
+    file: "articles/k2-2008.html",
+    difficulty: 4
+  },
+  {
+    id: "o157-sakai-1996",
+    title: "堺市学童集団食中毒事件（1996年）",
+    category: "食中毒",
+    tag: "tag-food",
+    emoji: "🥗",
+    date: "1996年7月",
+    country: "日本（大阪府）",
+    victims: "死者3名・患者9,578名",
+    summary: "学校給食を介したO157集団感染。感染源の断定的公表が農家に甚大な損害を与え、リスクコミュニケーションの失敗例としても知られる。",
+    file: "articles/o157-sakai-1996.html",
+    difficulty: 2
+  },
+  {
+    id: "deepwater-horizon-2010",
+    title: "ディープウォーター・ホライゾン爆発事故（2010年）",
+    category: "火災・災害",
+    tag: "tag-disaster",
+    emoji: "🔥",
+    date: "2010年4月",
+    country: "アメリカ（メキシコ湾）",
+    victims: "死者11名・原油流出490万バレル",
+    summary: "史上最大の海洋石油流出。BPの安全手順省略とコスト優先の判断が87日間にわたる環境大惨事を引き起こした。",
+    file: "articles/deepwater-horizon-2010.html",
+    difficulty: 3
   }
 ];
 
