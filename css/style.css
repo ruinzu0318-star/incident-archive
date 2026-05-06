@@ -9,9 +9,9 @@
   --accent:       #c9922a;
   --accent-light: #e8b84b;
   --accent-dim:   rgba(201,146,42,0.15);
-  --text:         #f8f0e4;
-  --text-muted:   #d4b896;
-  --text-dim:     #8a6848;
+  --text:         #fdf6ec;
+  --text-muted:   #ecd5b0;
+  --text-dim:     #b09070;
   --rule:         #3d2c1a;
 
   --tag-food:     #c97b2a;
@@ -446,8 +446,8 @@ nav a:hover { color: var(--accent-light); }
 }
 
 .card-footer {
-  font-size: 0.75rem;
-  color: var(--text-dim);
+  font-size: 0.78rem;
+  color: var(--text-muted);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -608,7 +608,8 @@ footer::before {
 
 .footer-about p {
   color: var(--text-muted);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 500;
   margin-top: 0.75rem;
   line-height: 1.9;
   font-style: italic;
@@ -773,6 +774,18 @@ footer::before {
   .article-wrap { grid-template-columns: 1fr; }
 }
 
+.article-content {
+  background: #221610;
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 6px 28px rgba(0,0,0,0.45);
+}
+
+@media (max-width: 600px) {
+  .article-content { padding: 1.25rem 1rem; }
+}
+
 .article-content h2 {
   font-family: var(--serif);
   font-size: 1.3rem;
@@ -846,12 +859,13 @@ footer::before {
   font-family: var(--serif);
 }
 
-.info-label { color: var(--text-dim); min-width: 80px; }
-.info-value { color: var(--text); }
+.info-label { color: var(--text-muted); min-width: 80px; font-weight: 600; }
+.info-value { color: var(--text); font-weight: 500; }
 
 .lesson-box {
-  background: rgba(201,146,42,0.05);
-  border: 1px solid rgba(201,146,42,0.25);
+  background: #291f0a;
+  border: 1px solid rgba(201,146,42,0.45);
+  border-left: 3px solid var(--accent);
   border-radius: 4px;
   padding: 1.5rem;
   margin: 2rem 0;
@@ -860,7 +874,8 @@ footer::before {
 .lesson-box h3 {
   font-family: var(--serif);
   color: var(--accent-light);
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-weight: 700;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -868,11 +883,12 @@ footer::before {
   letter-spacing: 0.05em;
 }
 
-.lesson-box ul { color: var(--text-muted); font-size: 0.97rem; line-height: 2; font-weight: 500; }
+.lesson-box ul { color: var(--text); font-size: 0.97rem; line-height: 2; font-weight: 500; }
 
 .impact-box {
-  background: rgba(58,127,160,0.05);
-  border: 1px solid rgba(58,127,160,0.2);
+  background: #0e1c26;
+  border: 1px solid rgba(58,127,160,0.45);
+  border-left: 3px solid #3a7fa0;
   border-radius: 4px;
   padding: 1.5rem;
   margin: 2rem 0;
@@ -880,8 +896,9 @@ footer::before {
 
 .impact-box h3 {
   font-family: var(--serif);
-  color: #6aafc8;
-  font-size: 0.95rem;
+  color: #8ecce8;
+  font-size: 1rem;
+  font-weight: 700;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
@@ -889,7 +906,7 @@ footer::before {
   letter-spacing: 0.05em;
 }
 
-.impact-box p { color: var(--text-muted); font-size: 0.97rem; margin-bottom: 0.5rem; line-height: 2; font-weight: 500; }
+.impact-box p { color: var(--text); font-size: 0.97rem; margin-bottom: 0.5rem; line-height: 2; font-weight: 500; }
 
 /* ─── Timeline ─── */
 .timeline {
