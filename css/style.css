@@ -247,6 +247,47 @@ nav a:hover { color: var(--accent-light); }
   letter-spacing: 0.1em;
 }
 
+/* ─── Hero categories ─── */
+.hero-cats-wrap {
+  max-width: 1100px;
+  margin: 2.5rem auto 0;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-cats-rule {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero-cats-rule::before,
+.hero-cats-rule::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--card-border));
+}
+
+.hero-cats-rule::after {
+  background: linear-gradient(270deg, transparent, var(--card-border));
+}
+
+.hero-cats-rule span {
+  font-family: var(--serif);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.hero-cats-wrap .categories-grid {
+  margin-bottom: 0;
+}
+
 /* ─── Main layout ─── */
 .main-wrap {
   max-width: 1200px;
@@ -316,13 +357,32 @@ nav a:hover { color: var(--accent-light); }
   min-height: 220px;
   border-right: 1px solid var(--card-border);
   position: relative;
+  overflow: hidden;
+}
+
+.featured-img--photo {
+  font-size: 0;
+}
+
+.featured-img--photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.featured-card:hover .featured-img--photo img {
+  transform: scale(1.06);
 }
 
 .featured-img::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, transparent 60%, var(--card-bg));
+  background: linear-gradient(to right, transparent 50%, var(--card-bg));
+  pointer-events: none;
+  z-index: 1;
 }
 
 .featured-body { padding: 2rem; }
