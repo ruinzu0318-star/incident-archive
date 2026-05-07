@@ -151,12 +151,25 @@ nav a:hover { color: var(--accent-light); }
   overflow: hidden;
 }
 
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center 40%;
+  opacity: 0.13;
+  filter: grayscale(35%) sepia(15%);
+  z-index: 0;
+  transition: opacity 0.5s ease;
+}
+
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at center top, rgba(201,146,42,0.07) 0%, transparent 60%);
+    radial-gradient(ellipse at center top, rgba(201,146,42,0.07) 0%, transparent 60%),
+    linear-gradient(to bottom, rgba(22,16,10,0.35) 0%, transparent 50%, rgba(22,16,10,0.5) 100%);
+  z-index: 1;
 }
 
 .hero::after {
@@ -170,7 +183,7 @@ nav a:hover { color: var(--accent-light); }
   background: linear-gradient(90deg, transparent, var(--accent), transparent);
 }
 
-.hero-inner { position: relative; max-width: 760px; margin: 0 auto; }
+.hero-inner { position: relative; z-index: 2; max-width: 760px; margin: 0 auto; }
 
 .hero-label {
   font-family: var(--serif);
@@ -253,7 +266,7 @@ nav a:hover { color: var(--accent-light); }
   margin: 2.5rem auto 0;
   padding: 0 1.5rem;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero-cats-rule {
