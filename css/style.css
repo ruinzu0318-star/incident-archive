@@ -1161,3 +1161,129 @@ footer::before {
   nav { display: none; }
   .search-wrap input { width: 140px; }
 }
+
+/* ─── Article enhancement components ─── */
+
+/* Lead paragraph — dramatic opening hook */
+p.lead {
+  font-size: 1.08rem;
+  line-height: 2.15;
+  color: var(--text) !important;
+  border-left: 3px solid var(--accent);
+  padding-left: 1.25rem;
+  margin-bottom: 1.75rem !important;
+  font-style: italic;
+  font-family: var(--serif);
+}
+
+/* Pull quote */
+.pull-quote {
+  position: relative;
+  margin: 2.25rem 0;
+  padding: 1.25rem 1.5rem 1.25rem 3rem;
+  background: rgba(201,146,42,0.05);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 4px 4px 0;
+}
+
+.pull-quote::before {
+  content: '\201C';
+  font-family: var(--serif);
+  font-size: 5rem;
+  color: var(--accent);
+  opacity: 0.25;
+  position: absolute;
+  top: -0.6rem;
+  left: 0.6rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.pull-quote p {
+  font-family: var(--serif);
+  font-size: 1.15rem !important;
+  font-style: italic;
+  color: var(--text) !important;
+  line-height: 1.8 !important;
+  margin: 0 !important;
+}
+
+.pull-quote cite {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--accent);
+  margin-top: 0.6rem;
+  font-style: normal;
+  font-family: var(--serif);
+  letter-spacing: 0.05em;
+}
+
+/* Shock stats row */
+.shock-stats {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1.75rem 0;
+}
+
+.shock-stat {
+  flex: 1;
+  min-width: 110px;
+  background: var(--surface);
+  border: 1px solid var(--card-border);
+  border-top: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: 1rem 0.75rem;
+  text-align: center;
+}
+
+.shock-stat .snum {
+  font-family: var(--serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent-light);
+  display: block;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.shock-stat .slabel {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  display: block;
+  margin-top: 0.35rem;
+  font-family: var(--serif);
+  line-height: 1.4;
+}
+
+/* Key moment highlight in timeline */
+.timeline-item.key .timeline-text {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.timeline-item.key::before {
+  background: var(--accent-light);
+  width: 10px;
+  height: 10px;
+  left: -1.75rem;
+  top: 0.35rem;
+}
+
+/* Search thumb */
+.search-thumb {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.search-result-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.search-emoji { font-size: 1.5rem; line-height: 1; }
