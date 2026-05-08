@@ -54,7 +54,7 @@ const articles = [
     date: "2000年6〜7月", country: "日本", victims: "患者約14,780名",
     summary: "黄色ブドウ球菌毒素による日本史上最大規模の食中毒事件。企業の隠蔽と危機管理の失敗が招いた社会的大事件。",
     file: "articles/yukijirushi-2000.html", difficulty: 2,
-    image: C("Milk_glass.jpg")
+    image: C("Snow_Brand_Milk_Products_(head_office_2).jpg")
   },
   {
     id: "blue-hole-2017",
@@ -63,7 +63,7 @@ const articles = [
     date: "継続中（年間複数件）", country: "エジプト", victims: "推計200名以上（累計）",
     summary: "世界最危険のダイビングスポットとして知られるエジプトの水中洞窟。なぜ熟練ダイバーですら命を落とすのか。",
     file: "articles/dahab-blue-hole.html", difficulty: 4,
-    image: C("Blue_Whole,_Dahab.jpg")
+    image: C("Blue_Hole,_Dahab.jpg")
   },
   {
     id: "kegon-1903",
@@ -153,7 +153,7 @@ const articles = [
     date: "1996年7月", country: "日本（大阪府）", victims: "死者3名・患者9,578名",
     summary: "学校給食を介したO157集団感染。感染源の断定的公表が農家に甚大な損害を与え、リスクコミュニケーションの失敗例としても知られる。",
     file: "articles/o157-sakai-1996.html", difficulty: 2,
-    image: C("E_coli_at_10000x,_original.jpg")
+    image: C("Escherichia_coli_(SEM).jpg")
   },
   {
     id: "deepwater-horizon-2010",
