@@ -1428,3 +1428,83 @@ p.lead {
 }
 
 .search-emoji { font-size: 1.5rem; line-height: 1; }
+
+/* ─── Article intro: narrative hook ─── */
+.intro-hook {
+  margin-bottom: 1.5rem;
+  padding: 1.75rem 2rem 1.75rem 2rem;
+  background: linear-gradient(135deg, rgba(40,28,12,0.95) 0%, rgba(22,15,6,0.98) 100%);
+  border: 1px solid var(--card-border);
+  border-left: 4px solid var(--accent-light);
+  border-radius: 0 8px 8px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.intro-hook::after {
+  content: '"';
+  font-family: var(--serif);
+  font-size: 9rem;
+  line-height: 1;
+  position: absolute;
+  right: 1.25rem;
+  bottom: -1.5rem;
+  color: var(--accent);
+  opacity: 0.07;
+  pointer-events: none;
+}
+
+.intro-hook p {
+  font-family: var(--serif);
+  font-size: 1.06rem !important;
+  line-height: 2.05 !important;
+  color: var(--text) !important;
+  margin: 0 !important;
+  font-style: normal;
+  position: relative;
+  z-index: 1;
+}
+
+.intro-hook p em {
+  color: var(--accent-light);
+  font-style: italic;
+}
+
+/* ─── Article intro: significance bar ─── */
+.significance-bar {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+  padding: 1.1rem 1.5rem;
+  background: rgba(201,146,42,0.05);
+  border: 1px solid rgba(201,146,42,0.18);
+  border-radius: 4px;
+}
+
+.sig-icon {
+  font-size: 1.2rem;
+  line-height: 1;
+  padding-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+.sig-body { flex: 1; }
+
+.sig-label {
+  display: block;
+  font-family: var(--serif);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+
+.significance-bar p {
+  font-family: var(--serif);
+  font-size: 0.93rem !important;
+  color: var(--text-muted) !important;
+  margin: 0 !important;
+  line-height: 1.75 !important;
+}
