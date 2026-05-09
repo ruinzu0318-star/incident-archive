@@ -163,6 +163,141 @@ const articles = [
     summary: "史上最大の海洋石油流出。BPの安全手順省略とコスト優先の判断が87日間にわたる環境大惨事を引き起こした。",
     file: "articles/deepwater-horizon-2010.html", difficulty: 3,
     image: C("Deepwater_Horizon_offshore_drilling_unit_on_fire_2010.jpg")
+  },
+  {
+    id: "challenger-1986",
+    title: "スペースシャトル・チャレンジャー号爆発事故（1986年）",
+    category: "航空", tag: "tag-aviation", emoji: "🚀",
+    date: "1986年1月", country: "アメリカ", victims: "死者7名",
+    summary: "打ち上げ73秒後の爆発。前夜の「飛ばすな」という技術者の警告を握り潰してNASAが下した判断の代償。",
+    file: "articles/challenger-1986.html", difficulty: 3,
+    image: C("Challenger_explosion.jpg")
+  },
+  {
+    id: "concorde-2000",
+    title: "コンコルド墜落事故（2000年）",
+    category: "航空", tag: "tag-aviation", emoji: "✈️",
+    date: "2000年7月", country: "フランス", victims: "死者113名",
+    summary: "超音速旅客機コンコルドの唯一の大惨事。滑走路上の金属片がタイヤを破裂させ、炎上したまま離陸した113名の悲劇。",
+    file: "articles/concorde-2000.html", difficulty: 3,
+    image: C("Air_France_Concorde_F-BVFC_at_Heathrow_1986.jpg")
+  },
+  {
+    id: "hillsborough-1989",
+    title: "ヒルズボロの悲劇（1989年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "⚽",
+    date: "1989年4月", country: "イギリス（シェフィールド）", victims: "死者97名",
+    summary: "FAカップ準決勝で起きたスタジアム将棋倒し事故。警察の不手際と長年にわたる隠蔽工作、27年後にようやく認められた真実。",
+    file: "articles/hillsborough-1989.html", difficulty: 3,
+    image: C("Hillsborough_memorial.jpg")
+  },
+  {
+    id: "three-mile-island-1979",
+    title: "スリーマイル島原子力発電所事故（1979年）",
+    category: "原子力", tag: "tag-nuclear", emoji: "☢️",
+    date: "1979年3月", country: "アメリカ（ペンシルバニア州）", victims: "直接死者0名・長期影響不明",
+    summary: "アメリカ史上最悪の原子力事故。炉心溶融の危機と政府の情報管理の失敗が全米を恐怖に陥れ、原発建設を25年間停止させた。",
+    file: "articles/three-mile-island-1979.html", difficulty: 3,
+    image: C("Three_Mile_Island_(color)-2.jpg")
+  },
+  {
+    id: "fukuchiyama-2005",
+    title: "JR福知山線脱線事故（2005年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "🚃",
+    date: "2005年4月", country: "日本（兵庫県尼崎市）", victims: "死者107名・負傷者562名",
+    summary: "制限速度を46km/hも超えたカーブで脱線しマンションに激突。日勤教育というJR西日本の異常な組織文化が招いた惨事。",
+    file: "articles/fukuchiyama-2005.html", difficulty: 3,
+    image: C("JR_Fukuchiyama_line_accident_site.jpg")
+  },
+  {
+    id: "exxon-valdez-1989",
+    title: "エクソン・ヴァルデーズ号原油流出事故（1989年）",
+    category: "海難", tag: "tag-sea", emoji: "🛢️",
+    date: "1989年3月", country: "アメリカ（アラスカ州）", victims: "乗員死者0・海鳥25万羽死亡",
+    summary: "船長の飲酒運航で起きたアラスカ最大の環境災害。2,000kmの海岸線を汚染し、生態系の回復に数十年を要した。",
+    file: "articles/exxon-valdez-1989.html", difficulty: 2,
+    image: C("Exxon_Valdez_Refloating.jpg")
+  },
+  {
+    id: "columbia-2003",
+    title: "スペースシャトル・コロンビア号空中分解事故（2003年）",
+    category: "航空", tag: "tag-aviation", emoji: "🚀",
+    date: "2003年2月", country: "アメリカ（テキサス州上空）", victims: "死者7名",
+    summary: "打ち上げ時の断熱材脱落を「許容範囲」と判断したNASAの組織文化。チャレンジャーの教訓が活かされなかった17年後の悲劇。",
+    file: "articles/columbia-2003.html", difficulty: 3,
+    image: C("Columbia_sts-107-crew.jpg")
+  },
+  {
+    id: "rana-plaza-2013",
+    title: "ラナプラザ崩壊事故（2013年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "🏗️",
+    date: "2013年4月", country: "バングラデシュ", victims: "死者1,134名",
+    summary: "「ひびが入っている」という警告を無視して出勤を強制された縫製工場の崩壊。ファストファッションの裏側で何が起きていたか。",
+    file: "articles/rana-plaza-2013.html", difficulty: 3,
+    image: C("2013_Dhaka_garment_factory_collapse.jpg")
+  },
+  {
+    id: "piper-alpha-1988",
+    title: "パイパーアルファ石油プラットフォーム爆発事故（1988年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "🔥",
+    date: "1988年7月", country: "イギリス（北海）", victims: "死者167名",
+    summary: "整備中の許可証ミスが引き起こした北海最大の石油施設爆発。167名が犠牲となり、海洋石油産業の安全基準を根底から変えた。",
+    file: "articles/piper-alpha-1988.html", difficulty: 3,
+    image: C("Piper_Alpha_burning.jpg")
+  },
+  {
+    id: "nevado-del-ruiz-1985",
+    title: "ネバド・デル・ルイス火山噴火と泥流（1985年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "🌋",
+    date: "1985年11月", country: "コロンビア", victims: "死者約23,000名",
+    summary: "科学者の警告を無視した政府と教会が避難を拒否。45分後、火山泥流が街を飲み込んだ——避けられた2万人の死。",
+    file: "articles/nevado-del-ruiz-1985.html", difficulty: 3,
+    image: C("Nevado_del_Ruiz_Armero_aftermath.jpg")
+  },
+  {
+    id: "uss-indianapolis-1945",
+    title: "USSインディアナポリス沈没事故（1945年）",
+    category: "海難", tag: "tag-sea", emoji: "🚢",
+    date: "1945年7月", country: "太平洋", victims: "死者880名（うちサメ被害多数）",
+    summary: "原爆部品を届けた帰路に魚雷で撃沈され、4日間誰にも気づかれなかった。サメに食われ続ける漂流と、艦長への不当な有罪判決。",
+    file: "articles/uss-indianapolis-1945.html", difficulty: 3,
+    image: C("USS_Indianapolis_(CA-35)_1937.jpg")
+  },
+  {
+    id: "windscale-1957",
+    title: "ウィンズケール原子炉火災事故（1957年）",
+    category: "原子力", tag: "tag-nuclear", emoji: "☢️",
+    date: "1957年10月", country: "イギリス（カンブリア州）", victims: "直接死者0名・がん死推計200〜240名",
+    summary: "英国史上最悪の原子力事故。4日間燃え続けた原子炉の火と、放射性物質の飛散を30年間隠し続けた英国政府の欺瞞。",
+    file: "articles/windscale-1957.html", difficulty: 3,
+    image: C("Windscale_chimneys.jpg")
+  },
+  {
+    id: "mont-blanc-tunnel-1999",
+    title: "モンブラントンネル火災（1999年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "🔥",
+    date: "1999年3月", country: "フランス・イタリア国境", victims: "死者39名",
+    summary: "アルプスの長大トンネルで53時間燃え続けた火災。避難場所の設計不備と国際間の消防連携の欠如が招いた悲劇。",
+    file: "articles/mont-blanc-tunnel-1999.html", difficulty: 2,
+    image: C("Mont_Blanc_tunnel_french_entrance.jpg")
+  },
+  {
+    id: "air-france-447-2009",
+    title: "エールフランス447便墜落事故（2009年）",
+    category: "航空", tag: "tag-aviation", emoji: "✈️",
+    date: "2009年6月", country: "大西洋（ブラジル沖）", victims: "死者228名（全員）",
+    summary: "ピトー管の凍結から3分30秒で大西洋に消えた228名。自動化への過信と手動操縦技能の喪失が引き起こした現代航空の悲劇。",
+    file: "articles/air-france-447-2009.html", difficulty: 4,
+    image: C("Air_France_Airbus_A330-200_Silber.jpg")
+  },
+  {
+    id: "grenfell-tower-2017",
+    title: "グレンフェル・タワー火災（2017年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "🔥",
+    date: "2017年6月", country: "イギリス（ロンドン）", victims: "死者72名",
+    summary: "80万円のコスト削減が72名の命を奪った。外壁が点火剤となった公営住宅の火災と、何年も前から届いていた住民の「警告」。",
+    file: "articles/grenfell-tower-2017.html", difficulty: 3,
+    image: C("Grenfell_Tower_fire.jpg")
   }
 ];
 
