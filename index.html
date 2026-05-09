@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>荳也阜縺ｮ莠倶ｻｶ繝ｻ莠区腐繧｢繝ｼ繧ｫ繧､繝・窶・豁ｴ蜿ｲ縺九ｉ蟄ｦ縺ｶ謨呵ｨ・/title>
-  <meta name="description" content="荳也阜荳ｭ縺ｧ襍ｷ縺阪◆鬟滉ｸｭ豈偵・逋ｻ螻ｱ驕ｭ髮｣繝ｻ豢樒ｪ滉ｺ区腐繝ｻ闊ｪ遨ｺ讖滉ｺ区腐縺ｪ縺ｩ繧定ｩｳ邏ｰ縺ｫ隗｣隱ｬ縲ゅ◎縺薙°繧牙ｾ励ｉ繧後ｋ謨呵ｨ薙→遉ｾ莨壹∈縺ｮ蠖ｱ髻ｿ繧剃ｼ昴∴縺ｾ縺吶・>
+  <title>世界の事件・事故アーカイブ — 歴史から学ぶ教訓</title>
+  <meta name="description" content="世界中で起きた食中毒・登山遭難・洞窟事故・航空機事故などを詳細に解説。そこから得られる教訓と社会への影響を伝えます。">
   <link rel="stylesheet" href="css/style.css?v=8">
 </head>
 <body>
@@ -12,16 +12,17 @@
 <header>
   <div class="header-inner">
     <a href="index.html" class="logo">
-      <div class="logo-icon">答</div>
-      荳也阜縺ｮ<span>莠倶ｻｶ繝ｻ莠区腐</span>繧｢繝ｼ繧ｫ繧､繝・    </a>
+      <div class="logo-icon">📚</div>
+      世界の<span>事件・事故</span>アーカイブ
+    </a>
     <nav>
-      <a href="#categories">繧ｫ繝・ざ繝ｪ繝ｼ</a>
-      <a href="#articles">險倅ｺ倶ｸ隕ｧ</a>
-      <a href="about.html">縺薙・繧ｵ繧､繝医↓縺､縺・※</a>
+      <a href="#categories">カテゴリー</a>
+      <a href="#articles">記事一覧</a>
+      <a href="about.html">このサイトについて</a>
     </nav>
     <div class="search-wrap">
-      <span class="search-icon">剥</span>
-      <input id="search-input" type="text" placeholder="繧ｭ繝ｼ繝ｯ繝ｼ繝峨〒讀懃ｴ｢...">
+      <span class="search-icon">🔍</span>
+      <input id="search-input" type="text" placeholder="キーワードで検索...">
     </div>
   </div>
 </header>
@@ -31,7 +32,7 @@
   <div class="search-panel">
     <div class="search-panel-header">
       <span id="search-header"></span>
-      <span style="cursor:pointer" onclick="document.getElementById('search-results').classList.remove('active')">笨・髢峨§繧・/span>
+      <span style="cursor:pointer" onclick="document.getElementById('search-results').classList.remove('active')">✕ 閉じる</span>
     </div>
     <div id="search-results-list"></div>
   </div>
@@ -41,76 +42,77 @@
 <section class="hero">
   <div class="hero-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Hindenburg_disaster.jpg?width=1200')"></div>
   <div class="hero-inner">
-    <div class="hero-label">窶・莠倶ｻｶ繝ｻ莠区腐縺ｮ險倬鹸譁・ｺｫ 窶・/div>
-    <h1>豁ｴ蜿ｲ縺ｫ蛻ｻ縺ｾ繧後◆<span class="accent">莠倶ｻｶ縺ｨ莠区腐</span>縺ｮ<br>險倬鹸縺ｨ謨呵ｨ・/h1>
-    <div class="hero-rule"><span>笨ｦ</span></div>
+    <div class="hero-label">— 事件・事故の記録文庫 —</div>
+    <h1>歴史に刻まれた<span class="accent">事件と事故</span>の<br>記録と教訓</h1>
+    <div class="hero-rule"><span>✦</span></div>
     <p>
-      鬟滉ｸｭ豈偵・逋ｻ螻ｱ驕ｭ髮｣繝ｻ豌ｴ荳ｭ豢樒ｪ溘・闊ｪ遨ｺ讖滉ｺ区腐繝ｻ蜴溷ｭ仙鴨轣ｽ螳ｳ窶ｦ窶ｦ<br>
-      荳也阜蜷・慍縺ｮ蜃ｺ譚･莠九ｒ蜿ｲ譁吶→縺励※險倬鹸縺励√◎縺ｮ閭梧勹繝ｻ邨檎ｷｯ繝ｻ謨呵ｨ薙ｒ蠕御ｸ悶↓莨昴∴繧九・    </p>
+      食中毒・登山遭難・水中洞窟・航空機事故・原子力災害……<br>
+      世界各地の出来事を史料として記録し、その背景・経緯・教訓を後世に伝える。
+    </p>
     <div class="hero-stats">
-      <div class="stat"><span class="num">18</span><div class="label">蜿朱鹸險倅ｺ・/div></div>
-      <div class="stat"><span class="num">8</span><div class="label">蛻・｡樣Κ髢</div></div>
-      <div class="stat"><span class="num">15+</span><div class="label">蟇ｾ雎｡蝗ｽ繝ｻ蝨ｰ蝓・/div></div>
+      <div class="stat"><span class="num">18</span><div class="label">収録記事</div></div>
+      <div class="stat"><span class="num">8</span><div class="label">分類部門</div></div>
+      <div class="stat"><span class="num">15+</span><div class="label">対象国・地域</div></div>
     </div>
   </div>
   <!-- Categories in hero -->
   <div id="categories" class="hero-cats-wrap">
-    <div class="hero-cats-rule"><span>繧ｫ繝・ざ繝ｪ繝ｼ縺ｧ謗｢縺・/span></div>
+    <div class="hero-cats-rule"><span>カテゴリーで探す</span></div>
     <div class="categories-grid">
-      <div class="category-card" data-category="鬟滉ｸｭ豈・>
+      <div class="category-card" data-category="食中毒">
         <div class="cat-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/SalmonellaNIAID.jpg?width=400')"></div>
         <div class="cat-content">
-          <div class="cat-name">鬟滉ｸｭ豈・/div>
-          <div class="cat-count">8險倅ｺ・/div>
+          <div class="cat-name">食中毒</div>
+          <div class="cat-count">8記事</div>
         </div>
       </div>
-      <div class="category-card" data-category="逋ｻ螻ｱ">
+      <div class="category-card" data-category="登山">
         <div class="cat-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/K2-Northwestface.jpg?width=400')"></div>
         <div class="cat-content">
-          <div class="cat-name">逋ｻ螻ｱ繝ｻ螻ｱ蟯ｳ</div>
-          <div class="cat-count">10險倅ｺ・/div>
+          <div class="cat-name">登山・山岳</div>
+          <div class="cat-count">10記事</div>
         </div>
       </div>
-      <div class="category-card" data-category="豢樒ｪ・>
+      <div class="category-card" data-category="洞窟">
         <div class="cat-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Postojna_Cave_(7).jpg?width=400')"></div>
         <div class="cat-content">
-          <div class="cat-name">豢樒ｪ溘・豌ｴ荳ｭ豢樒ｪ・/div>
-          <div class="cat-count">6險倅ｺ・/div>
+          <div class="cat-name">洞窟・水中洞窟</div>
+          <div class="cat-count">6記事</div>
         </div>
       </div>
-      <div class="category-card" data-category="豬ｷ髮｣">
+      <div class="category-card" data-category="海難">
         <div class="cat-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Shipwreck_Batumi_Georgia_R_Bartz.jpg?width=400')"></div>
         <div class="cat-content">
-          <div class="cat-name">豬ｷ髮｣繝ｻ豌ｴ髮｣</div>
-          <div class="cat-count">7險倅ｺ・/div>
+          <div class="cat-name">海難・水難</div>
+          <div class="cat-count">7記事</div>
         </div>
       </div>
-      <div class="category-card" data-category="闊ｪ遨ｺ">
+      <div class="category-card" data-category="航空">
         <div class="cat-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Het_verongelukte_KLM-toestel_De_Rijn,_Bestanddeelnr_929-1005_-_cropped.jpg?width=400')"></div>
         <div class="cat-content">
-          <div class="cat-name">闊ｪ遨ｺ讖滉ｺ区腐</div>
-          <div class="cat-count">9險倅ｺ・/div>
+          <div class="cat-name">航空機事故</div>
+          <div class="cat-count">9記事</div>
         </div>
       </div>
-      <div class="category-card" data-category="蜴溷ｭ仙鴨">
+      <div class="category-card" data-category="原子力">
         <div class="cat-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Chernobyl_NPP_Site_Panorama_with_NSC_Construction_-_June_2013.jpg?width=400')"></div>
         <div class="cat-content">
-          <div class="cat-name">蜴溷ｭ仙鴨繝ｻ蛹門ｭｦ</div>
-          <div class="cat-count">4險倅ｺ・/div>
+          <div class="cat-name">原子力・化学</div>
+          <div class="cat-count">4記事</div>
         </div>
       </div>
-      <div class="category-card" data-category="轣ｫ轣ｽ繝ｻ轣ｽ螳ｳ">
+      <div class="category-card" data-category="火災・災害">
         <div class="cat-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Deepwater_Horizon_offshore_drilling_unit_on_fire_2010.jpg?width=400')"></div>
         <div class="cat-content">
-          <div class="cat-name">轣ｫ轣ｽ繝ｻ閾ｪ辟ｶ轣ｽ螳ｳ</div>
-          <div class="cat-count">5險倅ｺ・/div>
+          <div class="cat-name">火災・自然災害</div>
+          <div class="cat-count">5記事</div>
         </div>
       </div>
-      <div class="category-card" data-category="豌ｴ荳ｭ豢樒ｪ・>
+      <div class="category-card" data-category="水中洞窟">
         <div class="cat-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Cave_diver_running_a_reel.jpg?width=400')"></div>
         <div class="cat-content">
-          <div class="cat-name">繝繧､繝薙Φ繧ｰ莠区腐</div>
-          <div class="cat-count">5險倅ｺ・/div>
+          <div class="cat-name">ダイビング事故</div>
+          <div class="cat-count">5記事</div>
         </div>
       </div>
     </div>
@@ -122,31 +124,34 @@
   <main>
 
     <!-- Featured -->
-    <div class="section-title">櫨 豕ｨ逶ｮ險倅ｺ・/div>
+    <div class="section-title">🔥 注目記事</div>
     <div class="featured-card">
       <div class="featured-img featured-img--photo">
         <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Rescue_equipment_in_Tham_Luang_entrance_chamber_(cropped).jpg?width=640"
-             alt="繧ｿ繧､豢樒ｪ滓舞蜃ｺ菴懈姶" loading="lazy"
-             onerror="this.parentElement.classList.remove('featured-img--photo');this.replaceWith(Object.assign(document.createElement('span'),{textContent:'糞・・}))">
+             alt="タイ洞窟救出作戦" loading="lazy"
+             onerror="this.parentElement.classList.remove('featured-img--photo');this.replaceWith(Object.assign(document.createElement('span'),{textContent:'🕳️'}))">
       </div>
       <div class="featured-body">
         <span class="featured-badge">FEATURED</span>
-        <h2><a href="articles/thai-cave-2018.html">繧ｿ繧､豢樒ｪ溷ｰ大ｹｴ謨大・菴懈姶・・018蟷ｴ・・/a></h2>
+        <h2><a href="articles/thai-cave-2018.html">タイ洞窟少年救出作戦（2018年）</a></h2>
         <p>
-          繧ｿ繧､蛹鈴Κ繝√ぉ繝ｳ繝ｩ繧､縺ｮ繧ｿ繝繝ｫ繧｢繝ｳ豢樒ｪ溘↓髢峨§霎ｼ繧√ｉ繧後◆蟆大ｹｴ繧ｵ繝・き繝ｼ繝√・繝13蜷阪・          蠅玲ｰｴ縺吶ｋ豢樒ｪ溷・縺ｧ17譌･髢薙ｒ逕溘″蟒ｶ縺ｳ縺溷ｽｼ繧峨ｒ謨代＞蜃ｺ縺吶◆繧√∽ｸ也阜荳ｭ縺九ｉ謨大勧髫翫′髮・ｵ舌＠縺溘・          蜈・恭蝗ｽ豬ｷ霆咲音谿企Κ髫翫ム繧､繝舌・縺ｫ繧医ｋ蜑堺ｾ九・縺ｪ縺・舞蜃ｺ菴懈姶縺ｮ蜈ｨ雋後・        </p>
+          タイ北部チェンライのタムルアン洞窟に閉じ込められた少年サッカーチーム13名。
+          増水する洞窟内で17日間を生き延びた彼らを救い出すため、世界中から救助隊が集結した。
+          元英国海軍特殊部隊ダイバーによる前例のない救出作戦の全貌。
+        </p>
         <div class="article-meta">
-          <span class="tag tag-cave">豢樒ｪ・/span>
-          <span>・・ 繧ｿ繧､</span>
-          <span>2018蟷ｴ7譛・/span>
-          <span>謨大・謌仙粥</span>
+          <span class="tag tag-cave">洞窟</span>
+          <span>🇹🇭 タイ</span>
+          <span>2018年7月</span>
+          <span>救出成功</span>
         </div>
       </div>
     </div>
 
     <!-- Articles -->
-    <div id="articles" class="section-title">堂 譛譁ｰ險倅ｺ・/div>
+    <div id="articles" class="section-title">📰 最新記事</div>
     <div id="articles-grid" class="articles-grid"></div>
-    <button id="load-more" class="load-more">繧ゅ▲縺ｨ隕九ｋ 竊・/button>
+    <button id="load-more" class="load-more">もっと見る ↓</button>
 
   </main>
 
@@ -154,30 +159,33 @@
   <aside class="sidebar">
 
     <div class="sidebar-card">
-      <h3>醇 莠ｺ豌苓ｨ倅ｺ・TOP5</h3>
+      <h3>🏆 人気記事 TOP5</h3>
       <ul class="recent-list" id="recent-list"></ul>
     </div>
 
     <div class="sidebar-card">
-      <h3>捷・・繧ｿ繧ｰ縺ｧ謗｢縺・/h3>
+      <h3>🏷️ タグで探す</h3>
       <div class="tag-cloud">
-        <span class="tag-btn" onclick="document.getElementById('search-input').value='鬟滉ｸｭ豈・; document.getElementById('search-input').dispatchEvent(new Event('input'))">鬟滉ｸｭ豈・/span>
-        <span class="tag-btn" onclick="document.getElementById('search-input').value='逋ｻ螻ｱ'; document.getElementById('search-input').dispatchEvent(new Event('input'))">逋ｻ螻ｱ</span>
-        <span class="tag-btn" onclick="document.getElementById('search-input').value='豢樒ｪ・; document.getElementById('search-input').dispatchEvent(new Event('input'))">豢樒ｪ・/span>
-        <span class="tag-btn" onclick="document.getElementById('search-input').value='繝ｭ繧ｷ繧｢'; document.getElementById('search-input').dispatchEvent(new Event('input'))">繝ｭ繧ｷ繧｢</span>
-        <span class="tag-btn" onclick="document.getElementById('search-input').value='闊ｪ遨ｺ'; document.getElementById('search-input').dispatchEvent(new Event('input'))">闊ｪ遨ｺ</span>
-        <span class="tag-btn" onclick="document.getElementById('search-input').value='譌･譛ｬ'; document.getElementById('search-input').dispatchEvent(new Event('input'))">譌･譛ｬ</span>
-        <span class="tag-btn" onclick="document.getElementById('search-input').value='繧｢繝｡繝ｪ繧ｫ'; document.getElementById('search-input').dispatchEvent(new Event('input'))">繧｢繝｡繝ｪ繧ｫ</span>
-        <span class="tag-btn" onclick="document.getElementById('search-input').value='繧ｨ繝吶Ξ繧ｹ繝・; document.getElementById('search-input').dispatchEvent(new Event('input'))">繧ｨ繝吶Ξ繧ｹ繝・/span>
-        <span class="tag-btn" onclick="document.getElementById('search-input').value='蜴溷ｭ仙鴨'; document.getElementById('search-input').dispatchEvent(new Event('input'))">蜴溷ｭ仙鴨</span>
-        <span class="tag-btn" onclick="document.getElementById('search-input').value='繧ｿ繧､'; document.getElementById('search-input').dispatchEvent(new Event('input'))">繧ｿ繧､</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='食中毒'; document.getElementById('search-input').dispatchEvent(new Event('input'))">食中毒</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='登山'; document.getElementById('search-input').dispatchEvent(new Event('input'))">登山</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='洞窟'; document.getElementById('search-input').dispatchEvent(new Event('input'))">洞窟</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='ロシア'; document.getElementById('search-input').dispatchEvent(new Event('input'))">ロシア</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='航空'; document.getElementById('search-input').dispatchEvent(new Event('input'))">航空</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='日本'; document.getElementById('search-input').dispatchEvent(new Event('input'))">日本</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='アメリカ'; document.getElementById('search-input').dispatchEvent(new Event('input'))">アメリカ</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='エベレスト'; document.getElementById('search-input').dispatchEvent(new Event('input'))">エベレスト</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='原子力'; document.getElementById('search-input').dispatchEvent(new Event('input'))">原子力</span>
+        <span class="tag-btn" onclick="document.getElementById('search-input').value='タイ'; document.getElementById('search-input').dispatchEvent(new Event('input'))">タイ</span>
       </div>
     </div>
 
     <div class="sidebar-card">
-      <h3>邃ｹ・・縺薙・繧ｵ繧､繝医↓縺､縺・※</h3>
+      <h3>ℹ️ このサイトについて</h3>
       <p style="font-size:0.83rem;color:var(--text-muted);line-height:1.8">
-        荳也阜蜷・慍縺ｮ莠倶ｻｶ繝ｻ莠区腐繧呈ｭ｣遒ｺ縺ｪ諠・ｱ繧偵ｂ縺ｨ縺ｫ隗｣隱ｬ縺励・        縺昴％縺九ｉ蠕励ｉ繧後ｋ謨呵ｨ薙・遉ｾ莨壹∈縺ｮ蠖ｱ髻ｿ繧定ｨ倬鹸縺吶ｋ繧｢繝ｼ繧ｫ繧､繝悶し繧､繝医〒縺吶・        迥迚ｲ縺ｨ縺ｪ縺｣縺滓婿縲・∈縺ｮ謨ｬ諢上ｒ蠢倥ｌ縺壹∵悴譚･縺ｸ縺ｮ蟄ｦ縺ｳ縺ｨ縺励※諠・ｱ繧堤匱菫｡縺励∪縺吶・      </p>
+        世界各地の事件・事故を正確な情報をもとに解説し、
+        そこから得られる教訓・社会への影響を記録するアーカイブサイトです。
+        犠牲となった方々への敬意を忘れず、未来への学びとして情報を発信します。
+      </p>
     </div>
 
   </aside>
@@ -186,40 +194,41 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-about">
-      <div class="logo">倹 荳也阜縺ｮ<span style="color:var(--accent)">莠倶ｻｶ繝ｻ莠区腐</span>繧｢繝ｼ繧ｫ繧､繝・/div>
+      <div class="logo">🌐 世界の<span style="color:var(--accent)">事件・事故</span>アーカイブ</div>
       <p>
-        豁ｴ蜿ｲ縺ｫ蛻ｻ縺ｾ繧後◆莠倶ｻｶ繝ｻ莠区腐繧定ｩｳ邏ｰ縺ｫ隗｣隱ｬ縺励∵蕗險薙→蠖ｱ髻ｿ繧貞ｾ御ｸ悶↓莨昴∴繧九い繝ｼ繧ｫ繧､繝悶し繧､繝医・        險倅ｺ九・縺吶∋縺ｦ蜈ｬ髢九＆繧後※縺・ｋ菫｡鬆ｼ諤ｧ縺ｮ鬮倥＞雉・侭繝ｻ譁・鍵繧偵ｂ縺ｨ縺ｫ菴懈・縺励※縺・∪縺吶・      </p>
+        歴史に刻まれた事件・事故を詳細に解説し、教訓と影響を後世に伝えるアーカイブサイト。
+        記事はすべて公開されている信頼性の高い資料・文献をもとに作成しています。
+      </p>
     </div>
     <div class="footer-links">
-      <h4>繧ｫ繝・ざ繝ｪ繝ｼ</h4>
+      <h4>カテゴリー</h4>
       <ul>
-        <li><a href="#">鬟滉ｸｭ豈偵・諢滓沒逞・/a></li>
-        <li><a href="#">逋ｻ螻ｱ繝ｻ螻ｱ蟯ｳ驕ｭ髮｣</a></li>
-        <li><a href="#">豢樒ｪ溘・豌ｴ荳ｭ豢樒ｪ・/a></li>
-        <li><a href="#">豬ｷ髮｣繝ｻ豌ｴ髮｣莠区腐</a></li>
-        <li><a href="#">闊ｪ遨ｺ讖滉ｺ区腐</a></li>
-        <li><a href="#">蜴溷ｭ仙鴨繝ｻ蛹門ｭｦ莠区腐</a></li>
+        <li><a href="#">食中毒・感染症</a></li>
+        <li><a href="#">登山・山岳遭難</a></li>
+        <li><a href="#">洞窟・水中洞窟</a></li>
+        <li><a href="#">海難・水難事故</a></li>
+        <li><a href="#">航空機事故</a></li>
+        <li><a href="#">原子力・化学事故</a></li>
       </ul>
     </div>
     <div class="footer-links">
-      <h4>繧ｵ繧､繝域ュ蝣ｱ</h4>
+      <h4>サイト情報</h4>
       <ul>
-        <li><a href="#">縺薙・繧ｵ繧､繝医↓縺､縺・※</a></li>
-        <li><a href="#">蜿り・枚迪ｮ繝ｻ蜃ｺ蜈ｸ</a></li>
-        <li><a href="#">蜈崎ｲｬ莠矩・/a></li>
-        <li><a href="#">縺雁撫縺・粋繧上○</a></li>
+        <li><a href="#">このサイトについて</a></li>
+        <li><a href="#">参考文献・出典</a></li>
+        <li><a href="#">免責事項</a></li>
+        <li><a href="#">お問い合わせ</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <span>ﾂｩ 2025 荳也阜縺ｮ莠倶ｻｶ繝ｻ莠区腐繧｢繝ｼ繧ｫ繧､繝・/span>
-    <span>險倅ｺ九・諠・ｱ縺ｯ蜈ｬ髢玖ｳ・侭繧偵ｂ縺ｨ縺ｫ菴懈・縺励※縺・∪縺吶・/span>
+    <span>© 2025 世界の事件・事故アーカイブ</span>
+    <span>記事の情報は公開資料をもとに作成しています。</span>
   </div>
 </footer>
 
-<button class="back-to-top" id="back-to-top">竊・/button>
+<button class="back-to-top" id="back-to-top">↑</button>
 
 <script src="js/main.js"></script>
 </body>
 </html>
-
