@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ruinzu0318-star.github.io/incident-archive/sitemap.xml
