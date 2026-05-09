@@ -100,14 +100,26 @@
       <div class="timeline-item">
         <div class="timeline-date">2000年</div>
         <div class="timeline-text">イスラエル人ダイバーのYuri Lipski氏がアーチ付近で死亡。本人が装着していたカメラが最後の映像を記録。深度115mに達していた（映像はインターネットで広く知られる）。</div>
+        <button class="tl-more" onclick="tlToggle(this)">カメラが捉えた最後の映像——リプスキー氏が深みへ向かった理由<span class="tl-arrow">›</span></button>
+        <div class="tl-detail"><div class="tl-detail-inner"><p>ユーリ・リプスキー氏が装着していた水中カメラは、彼が水深115メートルへと降下していく様子を記録した。映像の中で彼は方向感覚を失い、アーチに向かうはずが垂直の壁に沿って下へ下へと泳いでいった。窒素酔いが判断力を完全に奪っていた。</p>
+<p>映像の最後の部分では、彼がカメラを外そうとする動作が映っていた。重さを減らして浮上しようとしたのかもしれない。あるいはすでに意識が朦朧としていたのかもしれない。映像はそこで途切れた。彼は翌日、遺体で発見された。</p>
+<p>この映像はインターネット上に広まり、世界中のダイバーたちに衝撃を与えた。「自分は大丈夫」と思っていた熟練ダイバーが、気づけば戻れない深さにいる——その恐怖を視覚的に伝えた、最も説得力ある警告の記録となった。</p></div></div>
       </div>
       <div class="timeline-item">
         <div class="timeline-date">2005年</div>
         <div class="timeline-text">フランス人インストラクターがアーチ横断中に死亡。友人のダイビングを手助けしようとしたもの。</div>
+        <button class="tl-more" onclick="tlToggle(this)">友人を助けようとした男の最後の選択——この場所が隠す心理の罠<span class="tl-arrow">›</span></button>
+        <div class="tl-detail"><div class="tl-detail-inner"><p>フランス人インストラクターのオリヴィエ・ジヴォダンは、友人のダイバーがアーチを横断する際の安全を確保しようとして自らも水中へ入った。彼は経験豊富なインストラクターだった。しかし友人を守ろうという気持ちが、自分の安全判断を曇らせた。</p>
+<p>アーチに入ったところで、彼は友人が無事に通過しているのを確認した。安心感があったかもしれない。しかし帰路で彼の空気は尽きかけていた。56メートルという深さで、空気の消費量は水面の6.6倍だった。計算通りに使えば足りるはずだった。しかし興奮と深度が消費量を加速させた。</p>
+<p>彼の死は「計画を超えた行動」と「他者への責任感」が組み合わさった時に何が起きるかを示した事例として、ダイビング訓練機関で今も教材として使われている。</p></div></div>
       </div>
       <div class="timeline-item">
         <div class="timeline-date">年間複数件</div>
         <div class="timeline-text">毎年複数件の死亡事故が報告されている。地元当局は正確な統計を公表していないため、実際の死者数は把握されていない。</div>
+        <button class="tl-more" onclick="tlToggle(this)">数字の向こう側にある顔——追悼プレートが語る200の物語<span class="tl-arrow">›</span></button>
+        <div class="tl-detail"><div class="tl-detail-inner"><p>ブルーホール入口の岩壁に取り付けられた200枚以上の追悼プレートには、名前・国籍・没年が刻まれている。フランス・ドイツ・イスラエル・ロシア・英国・日本——世界中から来たダイバーたちの名前が並ぶ。多くは30〜40代の、経験豊富な人々だった。</p>
+<p>地元のダイビングショップ経営者たちは「またか」という言葉を毎年何度も口にする。増えていくプレートを見るたびに、警告を強化しようとする声が上がる。しかし「アーチツアー」を提供するショップが存在し続けるのも現実だ。経済的利益と安全のジレンマは解決されていない。</p>
+<p>正確な死者数が公表されない理由の一つは、エジプト当局が観光産業への影響を懸念しているからとも言われる。「世界で最も危険なダイビングスポット」という評判が、逆に世界中のダイバーを引き寄せているという皮肉な現実がある。</p></div></div>
       </div>
     </div>
 
@@ -196,10 +208,6 @@
 </footer>
 
 <button class="back-to-top" id="back-to-top">↑</button>
-<script>
-  const btn = document.getElementById('back-to-top');
-  window.addEventListener('scroll', () => btn.classList.toggle('visible', window.scrollY > 400));
-  btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-</script>
+<script src="../js/article.js"></script>
 </body>
 </html>
