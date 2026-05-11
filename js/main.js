@@ -534,6 +534,8 @@ function initGrid() {
       grid.insertAdjacentHTML('beforeend', next.map(renderCard).join(''));
       shown += 6;
       if (shown >= articles.length) btn.style.display = 'none';
+      // 追加カードを visible に（observeNewCards が呼ばれる前のフォールバック）
+      setTimeout(observeNewCards, 80);
     });
     if (articles.length <= 6) btn.style.display = 'none';
   }
@@ -583,10 +585,17 @@ function initCategoryFilter() {
       const cat = c.dataset.category;
       const grid = document.getElementById('articles-grid');
       if (!grid) return;
-      const filtered = articles.filter(a => a.category === cat);
+      // 洞窟カードは「洞窟」+「水中洞窟」両方を表示
+      const filtered = articles.filter(a =>
+        cat === '洞窟' ? (a.category === '洞窟' || a.category === '水中洞窟') : a.category === cat
+      );
       grid.innerHTML = filtered.length
         ? filtered.map(renderCard).join('')
         : '<div class="no-results" style="grid-column:1/-1">このカテゴリーの記事はまだ準備中です。</div>';
+      // 新しく挿入したカードをすぐ visible にする（アニメーション不要）
+      grid.querySelectorAll('.article-card').forEach((el, i) => {
+        setTimeout(() => el.classList.add('visible'), i * 40);
+      });
       grid.scrollIntoView({ behavior: 'smooth' });
     });
   });
