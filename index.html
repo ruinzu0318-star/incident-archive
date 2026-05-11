@@ -66,20 +66,26 @@
 <!-- Hero -->
 <section class="hero">
   <div class="hero-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Hindenburg_disaster.jpg?width=1200')"></div>
+  <div class="hero-particles" aria-hidden="true"></div>
   <div class="hero-inner">
-    <div class="hero-label">— 事件・事故の記録文庫 —</div>
-    <h1>歴史に刻まれた<span class="accent">事件と事故</span>の<br>記録と教訓</h1>
-    <div class="hero-rule"><span>✦</span></div>
-    <p>
+    <div class="hero-label anim-fadein-up" style="--delay:0s">— 事件・事故の記録文庫 —</div>
+    <h1 class="anim-fadein-up" style="--delay:0.15s">歴史に刻まれた<span class="accent">事件と事故</span>の<br>記録と教訓</h1>
+    <div class="hero-rule anim-fadein-up" style="--delay:0.3s"><span>✦</span></div>
+    <p class="anim-fadein-up" style="--delay:0.42s">
       食中毒・登山遭難・水中洞窟・航空機事故・原子力災害……<br>
       世界各地の出来事を史料として記録し、その背景・経緯・教訓を後世に伝える。
     </p>
-    <div class="hero-stats">
-      <div class="stat"><span class="num">53</span><div class="label">収録記事</div></div>
-      <div class="stat"><span class="num">8</span><div class="label">分類部門</div></div>
+    <div class="hero-stats anim-fadein-up" style="--delay:0.55s">
+      <div class="stat"><span class="num counter" data-target="53">0</span><div class="label">収録記事</div></div>
+      <div class="stat"><span class="num counter" data-target="8">0</span><div class="label">分類部門</div></div>
       <div class="stat"><span class="num">15+</span><div class="label">対象国・地域</div></div>
     </div>
   </div>
+  <div class="hero-scroll-indicator anim-fadein-up" style="--delay:0.9s" aria-hidden="true">
+    <span>SCROLL</span>
+    <div class="scroll-arrow"></div>
+  </div>
+  <div class="hero-bottom-rule"></div>
   <!-- Categories in hero -->
   <div id="categories" class="hero-cats-wrap">
     <div class="hero-cats-rule"><span>カテゴリーで探す</span></div>
@@ -88,56 +94,56 @@
         <div class="cat-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/SalmonellaNIAID.jpg?width=400')"></div>
         <div class="cat-content">
           <div class="cat-name">食中毒</div>
-          <div class="cat-count">8記事</div>
+          <div class="cat-count" data-cat="食中毒">3記事</div>
         </div>
       </div>
       <div class="category-card" data-category="登山">
         <div class="cat-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/K2-Northwestface.jpg?width=400')"></div>
         <div class="cat-content">
           <div class="cat-name">登山・山岳</div>
-          <div class="cat-count">10記事</div>
+          <div class="cat-count" data-cat="登山">3記事</div>
         </div>
       </div>
       <div class="category-card" data-category="洞窟">
         <div class="cat-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Postojna_Cave_(7).jpg?width=400')"></div>
         <div class="cat-content">
           <div class="cat-name">洞窟・水中洞窟</div>
-          <div class="cat-count">6記事</div>
+          <div class="cat-count" data-cat="洞窟">2記事</div>
         </div>
       </div>
       <div class="category-card" data-category="海難">
         <div class="cat-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Shipwreck_Batumi_Georgia_R_Bartz.jpg?width=400')"></div>
         <div class="cat-content">
           <div class="cat-name">海難・水難</div>
-          <div class="cat-count">7記事</div>
+          <div class="cat-count" data-cat="海難">10記事</div>
         </div>
       </div>
       <div class="category-card" data-category="航空">
         <div class="cat-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Het_verongelukte_KLM-toestel_De_Rijn,_Bestanddeelnr_929-1005_-_cropped.jpg?width=400')"></div>
         <div class="cat-content">
           <div class="cat-name">航空機事故</div>
-          <div class="cat-count">9記事</div>
+          <div class="cat-count" data-cat="航空">11記事</div>
         </div>
       </div>
       <div class="category-card" data-category="原子力">
         <div class="cat-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Chernobyl_NPP_Site_Panorama_with_NSC_Construction_-_June_2013.jpg?width=400')"></div>
         <div class="cat-content">
           <div class="cat-name">原子力・化学</div>
-          <div class="cat-count">4記事</div>
+          <div class="cat-count" data-cat="原子力">4記事</div>
         </div>
       </div>
       <div class="category-card" data-category="火災・災害">
         <div class="cat-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Deepwater_Horizon_offshore_drilling_unit_on_fire_2010.jpg?width=400')"></div>
         <div class="cat-content">
           <div class="cat-name">火災・自然災害</div>
-          <div class="cat-count">5記事</div>
+          <div class="cat-count" data-cat="火災・災害">20記事</div>
         </div>
       </div>
       <div class="category-card" data-category="水中洞窟">
         <div class="cat-bg" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Cave_diver_running_a_reel.jpg?width=400')"></div>
         <div class="cat-content">
           <div class="cat-name">ダイビング事故</div>
-          <div class="cat-count">5記事</div>
+          <div class="cat-count" data-cat="水中洞窟">1記事</div>
         </div>
       </div>
     </div>

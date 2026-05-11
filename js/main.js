@@ -592,10 +592,89 @@ function initCategoryFilter() {
   });
 }
 
+/* ── Auto-update category counts ── */
+function updateCategoryCounts() {
+  const countMap = {};
+  articles.forEach(a => {
+    countMap[a.category] = (countMap[a.category] || 0) + 1;
+  });
+  // 洞窟カードは「洞窟」+「水中洞窟」の合計を表示
+  document.querySelectorAll('[data-cat]').forEach(el => {
+    const key = el.dataset.cat;
+    let count = countMap[key] || 0;
+    if (key === '洞窟') count = (countMap['洞窟'] || 0) + (countMap['水中洞窟'] || 0);
+    if (count > 0) el.textContent = count + '記事';
+  });
+}
+
+/* ── Counter animation ── */
+function animateCounters() {
+  document.querySelectorAll('.counter[data-target]').forEach(el => {
+    const target = parseInt(el.dataset.target, 10);
+    const duration = 1400;
+    const startTime = performance.now();
+    function step(now) {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      // ease-out cubic
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(eased * target);
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  });
+}
+
+/* ── Scroll-reveal with IntersectionObserver ── */
+function initScrollReveal() {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        // stagger for category cards
+        const delay = el.closest('.categories-grid')
+          ? Array.from(el.parentElement.children).indexOf(el) * 70
+          : 0;
+        setTimeout(() => el.classList.add('visible'), delay);
+        io.unobserve(el);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  // observe cards, section titles, featured card
+  document.querySelectorAll(
+    '.article-card, .category-card, .section-title, .featured-card'
+  ).forEach(el => io.observe(el));
+}
+
+/* Re-observe new cards when "load more" adds them */
+function observeNewCards() {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.article-card:not(.visible)').forEach(el => io.observe(el));
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   renderRecent();
   initGrid();
   initSearch();
   initBackToTop();
   initCategoryFilter();
+  updateCategoryCounts();
+  animateCounters();
+  initScrollReveal();
+
+  // re-observe after load-more clicks
+  const loadMoreBtn = document.getElementById('load-more');
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', () => {
+      setTimeout(observeNewCards, 80);
+    });
+  }
 });

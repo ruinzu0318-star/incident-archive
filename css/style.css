@@ -1605,3 +1605,344 @@ p.lead {
 .tl-detail-inner p:last-child {
   margin-bottom: 0 !important;
 }
+
+/* ═══════════════════════════════════════════════
+   DYNAMIC HERO ANIMATIONS
+   ═══════════════════════════════════════════════ */
+
+/* Ken Burns – slow cinematic zoom/drift on hero background */
+@keyframes kenBurns {
+  0%   { transform: scale(1.10) translate(0%, 0%);    opacity: 0.13; }
+  33%  { transform: scale(1.18) translate(-1.5%, 0.8%); opacity: 0.17; }
+  66%  { transform: scale(1.14) translate(1.2%, -0.6%); opacity: 0.15; }
+  100% { transform: scale(1.10) translate(0%, 0%);    opacity: 0.13; }
+}
+
+.hero-bg {
+  animation: kenBurns 28s ease-in-out infinite;
+}
+
+/* Fade-in + slide-up for hero content elements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.anim-fadein-up {
+  opacity: 0;
+  animation: fadeInUp 0.75s cubic-bezier(0.22, 0.88, 0.36, 1) forwards;
+  animation-delay: var(--delay, 0s);
+}
+
+/* ── Floating particles ── */
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero-particles::before,
+.hero-particles::after {
+  content: '';
+  position: absolute;
+  width: 2px; height: 2px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0;
+  box-shadow:
+    /* scatter 30 particles via box-shadow positions */
+    120px  80px 0 0 rgba(201,146,42,0.55),
+    240px 160px 0 0 rgba(201,146,42,0.35),
+    380px  60px 0 0 rgba(201,146,42,0.45),
+    520px 200px 0 0 rgba(201,146,42,0.30),
+    680px  90px 0 0 rgba(201,146,42,0.50),
+    820px 170px 0 0 rgba(201,146,42,0.40),
+    960px  40px 0 0 rgba(201,146,42,0.35),
+   1100px 130px 0 0 rgba(201,146,42,0.55),
+   1240px  75px 0 0 rgba(201,146,42,0.30),
+   1380px 195px 0 0 rgba(201,146,42,0.45),
+     60px 280px 0 0 rgba(201,146,42,0.30),
+    200px 340px 0 0 rgba(201,146,42,0.45),
+    340px 420px 0 0 rgba(201,146,42,0.35),
+    480px 300px 0 0 rgba(201,146,42,0.55),
+    620px 380px 0 0 rgba(201,146,42,0.40),
+    760px 260px 0 0 rgba(201,146,42,0.30),
+    900px 440px 0 0 rgba(201,146,42,0.50),
+   1040px 320px 0 0 rgba(201,146,42,0.35),
+   1180px 400px 0 0 rgba(201,146,42,0.45),
+   1320px 280px 0 0 rgba(201,146,42,0.30),
+    150px 500px 0 0 rgba(201,146,42,0.40),
+    290px 560px 0 0 rgba(201,146,42,0.25),
+    430px 480px 0 0 rgba(201,146,42,0.50),
+    570px 540px 0 0 rgba(201,146,42,0.30),
+    710px 600px 0 0 rgba(201,146,42,0.40),
+    850px 520px 0 0 rgba(201,146,42,0.35),
+    990px 580px 0 0 rgba(201,146,42,0.25),
+   1130px 460px 0 0 rgba(201,146,42,0.45),
+   1270px 540px 0 0 rgba(201,146,42,0.30),
+   1410px 620px 0 0 rgba(201,146,42,0.40);
+  animation: particleFloat 18s ease-in-out infinite;
+}
+
+.hero-particles::after {
+  width: 1px; height: 1px;
+  box-shadow:
+    170px 120px 0 0 rgba(201,146,42,0.40),
+    310px  50px 0 0 rgba(201,146,42,0.30),
+    450px 190px 0 0 rgba(201,146,42,0.50),
+    590px 110px 0 0 rgba(201,146,42,0.35),
+    730px 230px 0 0 rgba(201,146,42,0.45),
+    870px  70px 0 0 rgba(201,146,42,0.30),
+   1010px 150px 0 0 rgba(201,146,42,0.40),
+   1150px 210px 0 0 rgba(201,146,42,0.35),
+   1290px  90px 0 0 rgba(201,146,42,0.50),
+   1430px 180px 0 0 rgba(201,146,42,0.30),
+    100px 360px 0 0 rgba(201,146,42,0.45),
+    250px 430px 0 0 rgba(201,146,42,0.25),
+    390px 310px 0 0 rgba(201,146,42,0.40),
+    530px 490px 0 0 rgba(201,146,42,0.30),
+    670px 350px 0 0 rgba(201,146,42,0.50);
+  animation: particleFloat 24s ease-in-out infinite reverse;
+}
+
+@keyframes particleFloat {
+  0%   { opacity: 0;    transform: translateY(0)      rotate(0deg);   }
+  15%  { opacity: 0.8; }
+  50%  { opacity: 0.4;  transform: translateY(-60px)  rotate(180deg); }
+  85%  { opacity: 0.7; }
+  100% { opacity: 0;    transform: translateY(-120px) rotate(360deg); }
+}
+
+/* ── Hero scan-line flicker overlay ── */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent 0px,
+    transparent 3px,
+    rgba(0,0,0,0.04) 3px,
+    rgba(0,0,0,0.04) 4px
+  );
+  pointer-events: none;
+  z-index: 3;
+  bottom: auto;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  transform: none;
+}
+
+/* Override the previous ::after pseudo element (the bottom rule) by adding a new selector */
+.hero-bottom-rule {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  z-index: 4;
+}
+
+/* ── Scroll indicator ── */
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: 2.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  opacity: 0; /* will be set by anim-fadein-up */
+}
+
+.hero-scroll-indicator span {
+  font-family: var(--serif);
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+.scroll-arrow {
+  width: 1px;
+  height: 36px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+  position: relative;
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+.scroll-arrow::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 5px;
+  height: 5px;
+  border-right: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 1; transform: scaleY(1);    }
+  50%       { opacity: 0.4; transform: scaleY(0.7); }
+}
+
+/* ── Hero height enhancement ── */
+.hero {
+  padding-top: 6rem;
+  padding-bottom: 4.5rem;
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-inner {
+  width: 100%;
+}
+
+/* ── Stat number glow on hover ── */
+.stat .num {
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.stat:hover .num {
+  color: var(--accent-light);
+  text-shadow: 0 0 20px rgba(201,146,42,0.45);
+}
+
+/* ── Category card staggered entrance ── */
+.category-card {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease,
+    border-color 0.25s,
+    box-shadow 0.25s;
+}
+
+.category-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Article card scroll-reveal ── */
+.article-card {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease,
+    border-color 0.25s,
+    box-shadow 0.25s;
+}
+
+.article-card.visible,
+.article-card:hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.article-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+/* ── Accent glow for hero rule ── */
+@keyframes ruleglow {
+  0%, 100% { opacity: 0.6; }
+  50%       { opacity: 1;   text-shadow: 0 0 12px rgba(201,146,42,0.6); }
+}
+
+.hero-rule span {
+  animation: ruleglow 3s ease-in-out infinite;
+}
+
+/* ── Hero h1 text shimmer ── */
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+.hero h1 .accent {
+  background: linear-gradient(
+    90deg,
+    var(--accent) 0%,
+    var(--accent-light) 40%,
+    #ffe89a 50%,
+    var(--accent-light) 60%,
+    var(--accent) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 5s linear infinite;
+}
+
+/* ── Featured card entrance ── */
+.featured-card {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease, border-color 0.3s;
+}
+
+.featured-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.featured-card:hover {
+  border-color: var(--accent);
+}
+
+/* ── Section title slide-in ── */
+.section-title {
+  opacity: 0;
+  transform: translateX(-14px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section-title.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* search thumb in results */
+.search-thumb {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-emoji {
+  font-size: 2rem;
+  width: 48px;
+  text-align: center;
+  flex-shrink: 0;
+}
