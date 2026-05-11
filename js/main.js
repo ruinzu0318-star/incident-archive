@@ -298,6 +298,186 @@ const articles = [
     summary: "80万円のコスト削減が72名の命を奪った。外壁が点火剤となった公営住宅の火災と、何年も前から届いていた住民の「警告」。",
     file: "articles/grenfell-tower-2017.html", difficulty: 3,
     image: C("Grenfell_Tower_fire.jpg")
+  },
+  {
+    id: "sewol-2014",
+    title: "セウォル号沈没事故（2014年）",
+    category: "海難", tag: "tag-sea", emoji: "🚢",
+    date: "2014年4月", country: "韓国（珍島沖）", victims: "死者・行方不明者304名",
+    summary: "修学旅行中の高校生250名以上を含む304名が犠牲になった韓国フェリー沈没事故。「その場に留まれ」という船内放送と船長の先逃げが、韓国社会全体を揺るがした。",
+    file: "articles/sewol-2014.html", difficulty: 3,
+    image: C("MV_Sewol_sinking.jpg")
+  },
+  {
+    id: "fukushima-2011",
+    title: "福島第一原子力発電所事故（2011年）",
+    category: "原子力", tag: "tag-nuclear", emoji: "☢️",
+    date: "2011年3月", country: "日本（福島県）", victims: "直接死1名・避難関連死2,000名以上",
+    summary: "東日本大震災による津波が引き起こしたレベル7の原子力事故。三重のメルトダウンと政府・東電の情報隠蔽が、15万人の避難者を生んだ。",
+    file: "articles/fukushima-2011.html", difficulty: 4,
+    image: C("Fukushima_I_by_Digital_Globe.jpg")
+  },
+  {
+    id: "costa-concordia-2012",
+    title: "コスタ・コンコルディア座礁事故（2012年）",
+    category: "海難", tag: "tag-sea", emoji: "🚢",
+    date: "2012年1月", country: "イタリア（ジリオ島沖）", victims: "死者32名",
+    summary: "船長の見栄によるルート逸脱が4,200名を乗せた豪華客船を岩礁に衝突させた。「船に戻れ」という怒号と、先に逃げた船長の対比が世界を震撼させた。",
+    file: "articles/costa-concordia-2012.html", difficulty: 2,
+    image: C("Costa_Concordia_shipwreck_2013.jpg")
+  },
+  {
+    id: "boeing-737max-2019",
+    title: "ボーイング737MAX連続墜落事故（2018〜2019年）",
+    category: "航空", tag: "tag-aviation", emoji: "✈️",
+    date: "2018〜2019年", country: "インドネシア・エチオピア", victims: "死者346名",
+    summary: "MCASという欠陥ソフトウェアが346名の命を奪った。コスト優先で安全審査を形骸化させたボーイングと規制当局の癒着の実態。",
+    file: "articles/boeing-737max-2019.html", difficulty: 4,
+    image: C("Ethiopian_Airlines_B737_MAX8_ET-AVJ.jpg")
+  },
+  {
+    id: "hindenburg-1937",
+    title: "飛行船ヒンデンブルク号爆発事故（1937年）",
+    category: "航空", tag: "tag-aviation", emoji: "🎈",
+    date: "1937年5月", country: "アメリカ（ニュージャージー州）", victims: "死者36名",
+    summary: "「空の宮殿」が着陸寸前にわずか34秒で炎に包まれた。ラジオ実況された史上初のリアルタイム大惨事は、飛行船時代の終焉を告げた。",
+    file: "articles/hindenburg-1937.html", difficulty: 2,
+    image: C("Hindenburg_disaster.jpg")
+  },
+  {
+    id: "triangle-shirtwaist-1911",
+    title: "トライアングル・シャツウエスト工場火災（1911年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "🔥",
+    date: "1911年3月", country: "アメリカ（ニューヨーク）", victims: "死者146名",
+    summary: "施錠された出口から逃げられなかった移民女性たちが窓から身を投げた。この惨事が米国労働法と職場安全規制の原点となった。",
+    file: "articles/triangle-shirtwaist-1911.html", difficulty: 2,
+    image: C("Triangle_shirtwaist_factory_fire_on_March_25_-_1911.jpg")
+  },
+  {
+    id: "sampoong-1995",
+    title: "三豊百貨店崩壊事故（1995年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "🏢",
+    date: "1995年6月", country: "韓国（ソウル）", victims: "死者502名・負傷者937名",
+    summary: "亀裂を知りながら客を入れ続けた百貨店が昼間に崩壊した。502名が犠牲となり、17日間後に救出された生存者は韓国の建設腐敗を象徴する事件となった。",
+    file: "articles/sampoong-1995.html", difficulty: 3,
+    image: C("Sampoong_department_store_collapse.jpg")
+  },
+  {
+    id: "herald-free-enterprise-1987",
+    title: "ヘラルド・オブ・フリー・エンタープライズ転覆事故（1987年）",
+    category: "海難", tag: "tag-sea", emoji: "🚢",
+    date: "1987年3月", country: "ベルギー（ゼーブルッヘ沖）", victims: "死者193名",
+    summary: "バウランプを開けたまま出港したカーフェリーが出港からわずか90秒で転覆した。組織的な安全管理の欠如と企業過失致死法誕生の契機となった惨事。",
+    file: "articles/herald-free-enterprise-1987.html", difficulty: 3,
+    image: C("Herald_of_Free_Enterprise.jpg")
+  },
+  {
+    id: "vajont-dam-1963",
+    title: "バイオントダム崩壊事故（1963年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "🌊",
+    date: "1963年10月", country: "イタリア（ベッルーノ県）", victims: "死者約2,000名",
+    summary: "地質学者の警告を無視し続けた末に山が動いた。2億6千万立方メートルの岩盤がダム湖に崩落し、45秒で谷間の集落2,000名を死に至らしめた「計算された虐殺」。",
+    file: "articles/vajont-dam-1963.html", difficulty: 4,
+    image: C("Vajont_Dam_from_below.jpg")
+  },
+  {
+    id: "mh370-2014",
+    title: "マレーシア航空370便失踪事件（2014年）",
+    category: "航空", tag: "tag-aviation", emoji: "✈️",
+    date: "2014年3月", country: "インド洋", victims: "死者239名（推定）",
+    summary: "消えた旅客機の謎は10年以上経った今も解けていない。史上最大規模の捜索で判明したことと、いまなお答えを求め続ける遺族たちの苦闘。",
+    file: "articles/mh370-2014.html", difficulty: 4,
+    image: C("Malaysia_Airlines_Boeing_777-200ER_9M-MRO.jpg")
+  },
+  {
+    id: "hyatt-regency-1981",
+    title: "カンザスシティ・ハイアット・リージェンシー歩道崩壊事故（1981年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "🏨",
+    date: "1981年7月", country: "アメリカ（ミズーリ州）", victims: "死者114名・負傷者216名",
+    summary: "電話一本で変更された設計図が114名の命を奪った。ティーダンスパーティ中に頭上の歩道が崩落した事故は、工学倫理教育の必修事例となった。",
+    file: "articles/hyatt-regency-1981.html", difficulty: 3,
+    image: C("Hyatt_Regency_walkway_collapse.jpg")
+  },
+  {
+    id: "lac-megantic-2013",
+    title: "ラック・メガンティック列車脱線火災（2013年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "🚂",
+    date: "2013年7月", country: "カナダ（ケベック州）", victims: "死者47名",
+    summary: "無人で停車中の原油タンク列車が動き出し、深夜の街の中心部に突入・爆発した。47名の命と街の半分を奪った事故が問う、人員削減と安全の限界。",
+    file: "articles/lac-megantic-2013.html", difficulty: 3,
+    image: C("Lac-Megantic_rail_disaster_site.jpg")
+  },
+  {
+    id: "dona-paz-1987",
+    title: "ドニャ・パス号沈没事故（1987年）",
+    category: "海難", tag: "tag-sea", emoji: "🚢",
+    date: "1987年12月", country: "フィリピン（タブラス海峡）", victims: "死者推計4,386名",
+    summary: "定員の3倍以上の乗客を乗せたフェリーがタンカーと衝突し、炎の海に沈んだ。平時最悪の海難事故として記録されるが、正確な死者数さえ今も不明だ。",
+    file: "articles/dona-paz-1987.html", difficulty: 3,
+    image: C("MV_Dona_Paz_sinking.jpg")
+  },
+  {
+    id: "genova-bridge-2018",
+    title: "ジェノバ・モランディ橋崩壊事故（2018年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "🌉",
+    date: "2018年8月", country: "イタリア（ジェノバ）", victims: "死者43名",
+    summary: "半世紀にわたる腐食劣化の警告を無視した高速道路会社の怠慢が、43名の命を奪った。インフラ老朽化という先進国共通の難題を突きつけた惨事。",
+    file: "articles/genova-bridge-2018.html", difficulty: 3,
+    image: C("Ponte_Morandi_collapse.jpg")
+  },
+  {
+    id: "lockerbie-1988",
+    title: "ロッカービー爆破事件（1988年）",
+    category: "航空", tag: "tag-aviation", emoji: "✈️",
+    date: "1988年12月", country: "イギリス（スコットランド）", victims: "死者270名",
+    summary: "空中爆破されたパンナム103便の残骸がスコットランドの小さな町に降り注いだ。リビア工作員の関与が判明するまでに要した13年間の国際捜査の全貌。",
+    file: "articles/lockerbie-1988.html", difficulty: 3,
+    image: C("Lockerbie_Pan_Am_Flight_103_crash_site.jpg")
+  },
+  {
+    id: "texas-city-1947",
+    title: "テキサスシティ大爆発（1947年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "💥",
+    date: "1947年4月", country: "アメリカ（テキサス州）", victims: "死者581名・負傷者5,000名以上",
+    summary: "「小火」のはずが硝酸アンモニウム肥料2,300トンの爆発に発展した。爆風は28km先まで届き、581名が死亡した米国史上最悪の産業爆発事故。",
+    file: "articles/texas-city-1947.html", difficulty: 3,
+    image: C("Texas_City_disaster.jpg")
+  },
+  {
+    id: "el-faro-2015",
+    title: "コンテナ船エル・ファロ沈没事故（2015年）",
+    category: "海難", tag: "tag-sea", emoji: "🚢",
+    date: "2015年10月", country: "バハマ沖", victims: "死者33名",
+    summary: "ハリケーン・ホアキンの直撃を受けたコンテナ船が33名全員とともに沈んだ。水深4,600mから回収されたVDRが明かした最後の8時間の真実。",
+    file: "articles/el-faro-2015.html", difficulty: 3,
+    image: C("El_Faro_container_ship.jpg")
+  },
+  {
+    id: "de-havilland-comet-1954",
+    title: "デ・ハビランド・コメット連続墜落事故（1954年）",
+    category: "航空", tag: "tag-aviation", emoji: "✈️",
+    date: "1954年1〜4月", country: "地中海", victims: "死者56名（2事故合計）",
+    summary: "世界初のジェット旅客機が相次いで空中分解した。金属疲労という未知の現象を解明した史上初の航空事故科学捜査が、現代航空安全の礎を築いた。",
+    file: "articles/de-havilland-comet-1954.html", difficulty: 4,
+    image: C("BOAC_Comet_Yoke_Peter.jpg")
+  },
+  {
+    id: "thalidomide-1950s",
+    title: "サリドマイド薬害事件（1950〜60年代）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "💊",
+    date: "1950〜60年代", country: "西ドイツ発・世界各国", victims: "被害児童推計10,000名以上",
+    summary: "「安全な睡眠薬」が世界中で1万人以上の子どもたちに障害を与えた薬害の原点。日本の9ヶ月遅れた販売停止が問う、行政の薬事責任とは何か。",
+    file: "articles/thalidomide-1950s.html", difficulty: 3,
+    image: C("Thalidomide.svg")
+  },
+  {
+    id: "kaprun-2000",
+    title: "カプルン鉄道トンネル火災（2000年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "🔥",
+    date: "2000年11月", country: "オーストリア（カプルン）", victims: "死者155名",
+    summary: "スキーリゾートの山岳鉄道トンネル内で発生した火災が、煙突効果により155名の命を奪った。下方向に逃げた12名だけが生き残り、全員無罪の判決が遺族を苦しめた。",
+    file: "articles/kaprun-2000.html", difficulty: 3,
+    image: C("Kitzsteinhorn_Gletscherbahn.jpg")
   }
 ];
 
