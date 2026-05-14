@@ -478,6 +478,184 @@ const articles = [
     summary: "スキーリゾートの山岳鉄道トンネル内で発生した火災が、煙突効果により155名の命を奪った。下方向に逃げた12名だけが生き残り、全員無罪の判決が遺族を苦しめた。",
     file: "articles/kaprun-2000.html", difficulty: 3,
     image: C("Kitzsteinhorn_Gletscherbahn.jpg")
+  },
+  {
+    id: "tylenol-1982",
+    title: "シカゴ・タイレノール毒物混入事件（1982年）",
+    category: "食中毒", tag: "tag-food", emoji: "🥩",
+    date: "1982年9月", country: "アメリカ（シカゴ）", victims: "死者7名",
+    summary: "市販の鎮痛薬に青酸カリが混入され7名が死亡。犯人は未逮捕のまま、事件は改ざん防止包装を世界中に広めた。",
+    file: "articles/tylenol-1982.html", difficulty: 3,
+    image: C("Tylenol_poisoning_1982.jpg")
+  },
+  {
+    id: "bse-crisis-1990s",
+    title: "狂牛病（BSE）パニック（1990年代）",
+    category: "食中毒", tag: "tag-food", emoji: "🥩",
+    date: "1990年代", country: "イギリス（欧州全体）", victims: "変異型クロイツフェルト・ヤコブ病死者200名以上",
+    summary: "牛海綿状脳症（BSE）が人に感染し得ると判明した瞬間、欧州の牛肉産業は崩壊した。プリオンという未知の病原体が引き起こした前例のない危機。",
+    file: "articles/bse-crisis-1990s.html", difficulty: 4,
+    image: C("Cow_female_black_white.jpg")
+  },
+  {
+    id: "minamata-1956",
+    title: "水俣病（1956年〜）",
+    category: "食中毒", tag: "tag-food", emoji: "🥩",
+    date: "1956年〜", country: "日本（熊本県水俣市）", victims: "公式認定患者2,283名・死者1,784名以上",
+    summary: "チッソ水俣工場が排出したメチル水銀が魚介類を汚染し、地域住民に深刻な神経障害をもたらした。日本四大公害病のひとつ。",
+    file: "articles/minamata-1956.html", difficulty: 4,
+    image: C("Minamata_disease_1.jpg")
+  },
+  {
+    id: "morinaga-1955",
+    title: "森永ヒ素ミルク事件（1955年）",
+    category: "食中毒", tag: "tag-food", emoji: "🥩",
+    date: "1955年8月", country: "日本（西日本中心）", victims: "死者130名・患者12,344名",
+    summary: "森永乳業の粉ミルクにヒ素が混入し、乳幼児に甚大な健康被害をもたらした。被害者への救済が数十年遅れた企業・行政責任の問題。",
+    file: "articles/morinaga-1955.html", difficulty: 3,
+    image: C("Powdered_milk.jpg")
+  },
+  {
+    id: "spinach-ecoli-2006",
+    title: "アメリカほうれん草E.coli集団食中毒（2006年）",
+    category: "食中毒", tag: "tag-food", emoji: "🥩",
+    date: "2006年9月", country: "アメリカ（全国26州）", victims: "死者3名・患者199名",
+    summary: "バックドア型農場での汚染により野菜産地イメージを直撃。トレーサビリティと農場GAP認証の普及を加速させた事件。",
+    file: "articles/spinach-ecoli-2006.html", difficulty: 2,
+    image: C("Spinach_leaves.jpg")
+  },
+  {
+    id: "mallory-irvine-1924",
+    title: "マロリーとアーヴィンの消息（1924年）",
+    category: "登山", tag: "tag-mountain", emoji: "🏔️",
+    date: "1924年6月", country: "ネパール/チベット（エベレスト）", victims: "死者2名",
+    summary: "ヒラリーの29年前、エベレストに挑んだ2人の登山家は山頂に達したのか。1999年に遺体が発見されるも、謎は解けないまま。",
+    file: "articles/mallory-irvine-1924.html", difficulty: 3,
+    image: C("Mallory_1924.jpg")
+  },
+  {
+    id: "nanga-parbat-1934",
+    title: "ナンガパルバット大量遭難（1934年）",
+    category: "登山", tag: "tag-mountain", emoji: "🏔️",
+    date: "1934年7月", country: "パキスタン（ヒマラヤ）", victims: "死者10名（登山隊員3名・高地ポーター7名）",
+    summary: "「人喰い山」の異名を持つナンガパルバットで下山中に嵐に遭い、10名が凍死した。第二次世界大戦前の登山史上最悪の惨事のひとつ。",
+    file: "articles/nanga-parbat-1934.html", difficulty: 3,
+    image: C("Nanga_Parbat_-_SRTM.jpg")
+  },
+  {
+    id: "mount-hood-1986",
+    title: "マウントフッド高校生遭難事故（1986年）",
+    category: "登山", tag: "tag-mountain", emoji: "🏔️",
+    date: "1986年5月", country: "アメリカ（オレゴン州）", victims: "死者9名（生徒7名・教師2名）",
+    summary: "春の登山遠足で山頂を目指した高校生たちが急激な天候悪化に遭い9名が死亡。引率判断と学校登山の安全管理が問われた。",
+    file: "articles/mount-hood-1986.html", difficulty: 2,
+    image: C("Mount_Hood_reflected_in_Mirror_Lake,_Oregon.jpg")
+  },
+  {
+    id: "ama-dablam-2006",
+    title: "アマ・ダブラム雪崩遭難（2006年）",
+    category: "登山", tag: "tag-mountain", emoji: "🏔️",
+    date: "2006年11月", country: "ネパール（ヒマラヤ）", victims: "死者6名",
+    summary: "ネパールの人気峰アマ・ダブラムで高所キャンプが雪崩に飲み込まれ、複数国の登山者が犠牲となった。",
+    file: "articles/ama-dablam-2006.html", difficulty: 3,
+    image: C("Ama_Dablam_from_Namche.jpg")
+  },
+  {
+    id: "galeras-1993",
+    title: "ガレラス火山噴火科学者遭難（1993年）",
+    category: "登山", tag: "tag-mountain", emoji: "🏔️",
+    date: "1993年1月", country: "コロンビア", victims: "死者9名（火山学者6名含む）",
+    summary: "国際会議の一環としてクレーターを調査中に突然噴火し、世界トップ級の火山学者たちが犠牲になった。",
+    file: "articles/galeras-1993.html", difficulty: 3,
+    image: C("Galeras_Volcano.jpg")
+  },
+  {
+    id: "nutty-putty-2009",
+    title: "ナティパティ洞窟事故（2009年）",
+    category: "洞窟", tag: "tag-cave", emoji: "🕳️",
+    date: "2009年11月", country: "アメリカ（ユタ州）", victims: "死者1名（ジョン・ジョーンズ氏）",
+    summary: "ユタ州の洞窟で逆さまの狭い亀裂に挟まった28歳の男性。28時間の救助活動も実らず、洞窟はそのまま彼の墓となった。",
+    file: "articles/nutty-putty-2009.html", difficulty: 3,
+    image: C("Nutty_Putty_Cave_entrance.jpg")
+  },
+  {
+    id: "cueva-de-villa-luz",
+    title: "毒ガス洞窟クエバ・デ・ビジャ・ルス",
+    category: "洞窟", tag: "tag-cave", emoji: "🕳️",
+    date: "探検継続中", country: "メキシコ（タバスコ州）", victims: "複数の探検家が硫化水素中毒",
+    summary: "硫化水素が噴出し続けるメキシコの洞窟。生物学的には極限生物の宝庫だが、一歩間違えば致死的な環境。",
+    file: "articles/cueva-de-villa-luz.html", difficulty: 4,
+    image: C("Cueva_de_Villa_Luz_-_snottites.jpg")
+  },
+  {
+    id: "boesmansgat-2004",
+    title: "ボースマンスガット洞窟水中捜索事故（2004年）",
+    category: "洞窟", tag: "tag-cave", emoji: "🕳️",
+    date: "2004年8月", country: "南アフリカ", victims: "死者1名（デイヴ・ショー氏）",
+    summary: "深度270mの水中洞窟で溺死した仲間の遺体を回収しようとした世界最高峰のケイブダイバーが、遺体とともに戻らなかった。",
+    file: "articles/boesmansgat-2004.html", difficulty: 5,
+    image: C("Diver_in_Boesmansgat.jpg")
+  },
+  {
+    id: "cave-diving-florida",
+    title: "フロリダ水中洞窟連続死亡事故",
+    category: "洞窟", tag: "tag-cave", emoji: "🕳️",
+    date: "1970年代〜", country: "アメリカ（フロリダ州）", victims: "数十名以上が死亡",
+    summary: "フロリダの水中洞窟は世界最大規模だが、装備も訓練もない潜水者を次々と命取りにした。「洞窟に入るな」警告の誕生秘話。",
+    file: "articles/cave-diving-florida.html", difficulty: 4,
+    image: C("Cave_diving_in_Florida.jpg")
+  },
+  {
+    id: "american-191-1979",
+    title: "アメリカン航空191便墜落事故（1979年）",
+    category: "航空", tag: "tag-aviation", emoji: "✈️",
+    date: "1979年5月", country: "アメリカ（シカゴ）", victims: "死者273名（全員）",
+    summary: "離陸直後にエンジンが脱落しシカゴ郊外に墜落。アメリカ史上最悪の航空機事故。整備マニュアル無視が招いた人災。",
+    file: "articles/american-191-1979.html", difficulty: 3,
+    image: C("American_Airlines_Flight_191_crash_site.jpg")
+  },
+  {
+    id: "valuejet-592-1996",
+    title: "バリュージェット592便墜落事故（1996年）",
+    category: "航空", tag: "tag-aviation", emoji: "✈️",
+    date: "1996年5月", country: "アメリカ（フロリダ州）", victims: "死者110名（全員）",
+    summary: "貨物室の酸素発生装置が発火しフロリダの湿地帯に墜落。低コスト航空の安全管理と外注整備の問題を浮き彫りにした。",
+    file: "articles/valuejet-592-1996.html", difficulty: 3,
+    image: C("ValuJet_Airlines_Flight_592.jpg")
+  },
+  {
+    id: "swissair-111-1998",
+    title: "スイス航空111便墜落事故（1998年）",
+    category: "航空", tag: "tag-aviation", emoji: "✈️",
+    date: "1998年9月", country: "カナダ（ノバスコシア州沖）", victims: "死者229名（全員）",
+    summary: "機内の電気系統から出火し夜の大西洋に墜落。229名全員死亡。「エンターテイメント配線」が招いた悲劇。",
+    file: "articles/swissair-111-1998.html", difficulty: 3,
+    image: C("Swissair_111_crash_site.jpg")
+  },
+  {
+    id: "estonia-1994",
+    title: "エストニア号沈没事故（1994年）",
+    category: "海難", tag: "tag-sea", emoji: "🚢",
+    date: "1994年9月", country: "バルト海（エストニア・フィンランド間）", victims: "死者852名",
+    summary: "嵐のバルト海で船首扉が破損し浸水転覆。852名が犠牲となった欧州最大の平時海難事故。船体は今も海底に眠る。",
+    file: "articles/estonia-1994.html", difficulty: 4,
+    image: C("MS_Estonia_1994.jpg")
+  },
+  {
+    id: "le-joola-2002",
+    title: "ル・ジュオラ号沈没事故（2002年）",
+    category: "海難", tag: "tag-sea", emoji: "🚢",
+    date: "2002年9月", country: "セネガル（大西洋）", victims: "死者1,863名",
+    summary: "定員の6倍以上を乗せたセネガルの国営フェリーが嵐で転覆。1,863名が死亡しタイタニック号を超える史上最悪級の平時海難となった。",
+    file: "articles/le-joola-2002.html", difficulty: 4
+  },
+  {
+    id: "our-lady-of-angels-1958",
+    title: "天使の聖母学校火災（1958年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "🔥",
+    date: "1958年12月", country: "アメリカ（シカゴ）", victims: "死者92名（うち児童87名）",
+    summary: "シカゴの小学校で発生した火災により92名が死亡。そのほとんどが幼い子どもたちだった。アメリカ全土の学校防火基準を根本から変えた惨事。",
+    file: "articles/our-lady-of-angels-1958.html", difficulty: 3
   }
 ];
 
