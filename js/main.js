@@ -657,6 +657,185 @@ const articles = [
     summary: "シカゴの小学校で発生した火災により92名が死亡。そのほとんどが幼い子どもたちだった。アメリカ全土の学校防火基準を根本から変えた惨事。",
     file: "articles/our-lady-of-angels-1958.html", difficulty: 3
   }
+  ,
+  {
+    id: "tokaimura-1999",
+    title: "東海村JCO臨界事故（1999年）",
+    category: "原子力", tag: "tag-nuclear", emoji: "☢️",
+    date: "1999年9月", country: "日本（茨城県）", victims: "死者2名、重傷者1名、周辺住民約660名被曝",
+    summary: "ウラン加工施設での臨界事故。作業員が規定外の操作をしたため核分裂連鎖反応が発生し、2名が死亡した日本最悪の臨界事故。",
+    file: "articles/tokaimura-1999.html", difficulty: 3,
+    image: C("JCO_Criticality_Accident.jpg")
+  },
+  {
+    id: "goiania-1987",
+    title: "ゴイアニア放射線事故（1987年）",
+    category: "原子力", tag: "tag-nuclear", emoji: "☢️",
+    date: "1987年9月", country: "ブラジル（ゴイアニア）", victims: "死者4名、重篤な被曝者20名以上",
+    summary: "廃棄された放射線治療機器からセシウム137が漏洩。青白く光る物質に興味を持った住民が素手で触れ、4名が死亡した史上最悪の放射線源盗難事故。",
+    file: "articles/goiania-1987.html", difficulty: 3,
+    image: C("Goiania_radiation_accident_casul.jpg")
+  },
+  {
+    id: "kyshtym-1957",
+    title: "キシュテム核惨事（1957年）",
+    category: "原子力", tag: "tag-nuclear", emoji: "☢️",
+    date: "1957年9月", country: "ソ連（ウラル地方）", victims: "直接死者不明、数十万人が放射線被曝",
+    summary: "ソ連の核廃棄物貯蔵施設で爆発が発生し、大量の放射性物質が拡散。チェルノブイリ以前では史上最大の原子力事故で、長年秘密にされていた。",
+    file: "articles/kyshtym-1957.html", difficulty: 4,
+    image: C("Mayak_Production_Association.jpg")
+  },
+  {
+    id: "uberlingen-2002",
+    title: "ユーバーリンゲン空中衝突事故（2002年）",
+    category: "航空", tag: "tag-aviation", emoji: "✈️",
+    date: "2002年7月", country: "ドイツ（ユーバーリンゲン上空）", victims: "死者71名（全員）",
+    summary: "バシュキール航空とDHL貨物機が空中衝突し71名全員が死亡。TCASの指示に反した管制官の誤指示が原因。事故後、怒った遺族が管制官を刺殺する報復事件も発生した。",
+    file: "articles/uberlingen-2002.html", difficulty: 4,
+    image: C("Bashkirian_Airlines_Flight_2937.jpg")
+  },
+  {
+    id: "air-india-182-1985",
+    title: "エア・インディア182便爆破事件（1985年）",
+    category: "航空", tag: "tag-aviation", emoji: "✈️",
+    date: "1985年6月", country: "大西洋上空（アイルランド沖）", victims: "死者329名（全員）",
+    summary: "カナダ発インド行きの旅客機が大西洋上空で爆破され329名全員が死亡。シク教過激派によるテロで、当時の航空テロとして最多の犠牲者を出した事件。",
+    file: "articles/air-india-182-1985.html", difficulty: 3,
+    image: C("Air_India_Boeing_747-237B_Bhagat_Singh.jpg")
+  },
+  {
+    id: "alaska-airlines-261-2000",
+    title: "アラスカ航空261便墜落事故（2000年）",
+    category: "航空", tag: "tag-aviation", emoji: "✈️",
+    date: "2000年1月", country: "アメリカ（太平洋沖）", victims: "死者88名（全員）",
+    summary: "水平安定板のジャッキスクリューの整備不良により制御不能となり太平洋に墜落。整備プログラムのグリース交換間隔を伸ばしたことが直接の原因だった。",
+    file: "articles/alaska-airlines-261-2000.html", difficulty: 3,
+    image: C("Alaska_Airlines_Flight_261_crash_site.jpg")
+  },
+  {
+    id: "milan-linate-2001",
+    title: "ミラノ・リナーテ空港衝突事故（2001年）",
+    category: "航空", tag: "tag-aviation", emoji: "✈️",
+    date: "2001年10月", country: "イタリア（ミラノ）", victims: "死者118名",
+    summary: "濃霧の中、滑走路を誤って進入したセスナ機と離陸滑走中のMD-87が衝突し118名が死亡。不十分な地上レーダーと不明確な誘導標識が悲劇を招いた。",
+    file: "articles/milan-linate-2001.html", difficulty: 3,
+    image: C("Linate_airport_accident.jpg")
+  },
+  {
+    id: "twa-800-1996",
+    title: "TWA800便墜落事故（1996年）",
+    category: "航空", tag: "tag-aviation", emoji: "✈️",
+    date: "1996年7月", country: "アメリカ（ニューヨーク沖）", victims: "死者230名（全員）",
+    summary: "ニューヨーク沖を飛行中のボーイング747が空中爆発し230名全員が死亡。燃料タンク内の爆発が原因と断定されたが、陰謀論も根強く残る航空史上の謎多き事故。",
+    file: "articles/twa-800-1996.html", difficulty: 3,
+    image: C("TWA_Flight_800_reconstruction.jpg")
+  },
+  {
+    id: "aloha-airlines-243-1988",
+    title: "アロハ航空243便事故（1988年）",
+    category: "航空", tag: "tag-aviation", emoji: "✈️",
+    date: "1988年4月", country: "アメリカ（ハワイ上空）", victims: "死者1名、重傷者65名",
+    summary: "飛行中に機体上部の外板が大規模に剥離し客室が露天状態になりながらも奇跡的に着陸成功。金属疲労と腐食の見落としが原因で、航空機検査基準を世界的に変えた事故。",
+    file: "articles/aloha-airlines-243-1988.html", difficulty: 2,
+    image: C("Aloha_Airlines_Flight_243_fuselage.jpg")
+  },
+  {
+    id: "wilhelm-gustloff-1945",
+    title: "ヴィルヘルム・グストロフ号撃沈（1945年）",
+    category: "海難", tag: "tag-sea", emoji: "🚢",
+    date: "1945年1月", country: "バルト海", victims: "死者推定9,000〜10,000名以上",
+    summary: "第二次世界大戦末期、ソ連潜水艦に撃沈されたドイツ船で、史上最大の海難事故。タイタニック号の約6倍の犠牲者を出したが、戦時下のため長年語られなかった悲劇。",
+    file: "articles/wilhelm-gustloff-1945.html", difficulty: 3,
+    image: C("Wilhelm_Gustloff_1939.jpg")
+  },
+  {
+    id: "andrea-doria-1956",
+    title: "アンドレア・ドーリア号沈没（1956年）",
+    category: "海難", tag: "tag-sea", emoji: "🚢",
+    date: "1956年7月", country: "大西洋（ナンタケット島沖）", victims: "死者46名",
+    summary: "イタリアの豪華客船がストックホルム号と衝突し沈没。46名が死亡したが1,660名以上が救助された。レーダーへの過信と霧中での高速航行が招いた悲劇。",
+    file: "articles/andrea-doria-1956.html", difficulty: 2,
+    image: C("Andrea_Doria_sinking.jpg")
+  },
+  {
+    id: "morro-castle-1934",
+    title: "モロ・キャッスル号火災（1934年）",
+    category: "海難", tag: "tag-sea", emoji: "🚢",
+    date: "1934年9月", country: "アメリカ（ニュージャージー州沖）", victims: "死者137名",
+    summary: "ハバナからニューヨークへ向かう豪華客船で火災が発生し137名が死亡。船長の不審死、船員の無責任な行動、不十分な消火設備が重なった謎多き惨事。",
+    file: "articles/morro-castle-1934.html", difficulty: 3,
+    image: C("Morro_Castle_aground.jpg")
+  },
+  {
+    id: "broad-peak-2013",
+    title: "ブロードピーク登頂遭難事故（2013年）",
+    category: "登山", tag: "tag-mountain", emoji: "⛰️",
+    date: "2013年7月", country: "パキスタン（カラコルム山脈）", victims: "死者3名",
+    summary: "ポーランド隊が世界14座最後の頂、ブロードピークに初冬季登頂を達成したが下山中に3名が死亡。極限状態での判断ミスと天候悪化が招いた悲劇。",
+    file: "articles/broad-peak-2013.html", difficulty: 4,
+    image: C("Broad_Peak_from_Concordia.jpg")
+  },
+  {
+    id: "white-island-2019",
+    title: "ホワイト島火山噴火事故（2019年）",
+    category: "登山", tag: "tag-mountain", emoji: "🌋",
+    date: "2019年12月", country: "ニュージーランド（ホワイト島）", victims: "死者22名",
+    summary: "活火山の観光地として知られるホワイト島で突然噴火が発生し47名の観光客が巻き込まれ22名が死亡。火山活動が活発だったにもかかわらず観光が続けられていた。",
+    file: "articles/white-island-2019.html", difficulty: 2,
+    image: C("White_Island_eruption_2019.jpg")
+  },
+  {
+    id: "siachen-glacier-1984",
+    title: "シアチェン氷河紛争と雪崩災害（1984年〜）",
+    category: "登山", tag: "tag-mountain", emoji: "⛰️",
+    date: "1984年4月〜現在", country: "インド・パキスタン国境", victims: "両軍合計死者3,000名以上（大半が環境要因）",
+    summary: "世界最高所の戦場、シアチェン氷河での長期軍事駐留。標高6,000m超の極寒・低酸素環境での戦闘より、雪崩・凍傷・高山病による死者が圧倒的に多い特殊な紛争地帯。",
+    file: "articles/siachen-glacier-1984.html", difficulty: 4,
+    image: C("Siachen_glacier.jpg")
+  },
+  {
+    id: "lechuguilla-cave-1991",
+    title: "レチュギジャ洞窟探検遭難（1991年）",
+    category: "洞窟", tag: "tag-cave", emoji: "🕳️",
+    date: "1991年5月", country: "アメリカ（ニューメキシコ州）", victims: "重傷者1名（Emily Davis Mobley）",
+    summary: "世界屈指の美しい洞窟、レチュギジャ洞窟の深部探検中に探検家が滑落し重傷。地下400m以上からの困難な救助活動は4日間に及び、洞窟救助技術の転換点となった。",
+    file: "articles/lechuguilla-cave-1991.html", difficulty: 3
+  },
+  {
+    id: "dachstein-ice-cave-1954",
+    title: "ダッハシュタイン洞窟遭難事故（1954年）",
+    category: "洞窟", tag: "tag-cave", emoji: "🕳️",
+    date: "1954年8月", country: "オーストリア（ダッハシュタイン山地）", victims: "死者5名",
+    summary: "オーストリアのダッハシュタイン氷穴探検に向かった少年グループが道に迷い5名が死亡。装備不足と経験不足のまま洞窟に挑んだ悲劇は、洞窟探検の安全規則を変えた。",
+    file: "articles/dachstein-ice-cave-1954.html", difficulty: 2
+  },
+  {
+    id: "station-nightclub-2003",
+    title: "ステーション・ナイトクラブ火災（2003年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "🔥",
+    date: "2003年2月", country: "アメリカ（ロードアイランド州）", victims: "死者100名、重傷者230名以上",
+    summary: "ロックバンドの舞台演出の花火が防音材に引火し100名が死亡。たった90秒で出口に殺到したパニックが死者を増やした。防火基準と興行許可制度を見直す契機となった。",
+    file: "articles/station-nightclub-2003.html", difficulty: 2,
+    image: C("The_Station_nightclub_fire.jpg")
+  },
+  {
+    id: "kings-cross-1987",
+    title: "キングスクロス駅火災（1987年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "🔥",
+    date: "1987年11月", country: "イギリス（ロンドン）", victims: "死者31名、重傷者多数",
+    summary: "ロンドン地下鉄キングスクロス駅のエスカレーター下に堆積したゴミに引火し31名が死亡。「トレンチング効果」という未知の燃焼現象が炎を急速に拡大させた。",
+    file: "articles/kings-cross-1987.html", difficulty: 2,
+    image: C("King's_Cross_fire.jpg")
+  },
+  {
+    id: "apollo-1-1967",
+    title: "アポロ1号火災事故（1967年）",
+    category: "火災・災害", tag: "tag-disaster", emoji: "🔥",
+    date: "1967年1月", country: "アメリカ（フロリダ州）", victims: "死者3名（乗員全員）",
+    summary: "月を目指す訓練中、発射台上のアポロ1号宇宙船で火災が発生し宇宙飛行士3名全員が死亡。純酸素環境と不十分な脱出ハッチ設計が悲劇を招き、アメリカ宇宙開発を一変させた。",
+    file: "articles/apollo-1-1967.html", difficulty: 3,
+    image: C("Apollo_1_crew_in_front_of_the_launch_pad.jpg")
+  }
 ];
 
 function renderDifficulty(level) {
